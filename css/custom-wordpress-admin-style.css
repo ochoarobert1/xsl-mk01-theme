@@ -51,7 +51,7 @@ ADMIN STYLE
   color: #FFFFFF;
 }
 /* MENU CUSTOM STYLE */
-#adminmenu #toplevel_page_PROYECTO-control-panel {
+#adminmenu #toplevel_page_xsl-control-panel {
   background: #464646;
 }
 #footer-thankyou a {
@@ -65,10 +65,10 @@ ADMIN STYLE
 /* --------------------------------------------------------------
 CUSTOM MENU ADMIN PAGE
 -------------------------------------------------------------- */
-body.toplevel_page_PROYECTO-control-panel #wpcontent {
+body.toplevel_page_xsl-control-panel #wpcontent {
   padding-left: 0;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-header-container {
+body.toplevel_page_xsl-control-panel .xsl-admin-header-container {
   background-color: #171a1d;
   padding: 1rem;
   display: -webkit-box;
@@ -80,14 +80,14 @@ body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-header-container {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-header-container img {
+body.toplevel_page_xsl-control-panel .xsl-admin-header-container img {
   max-width: 130px;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-header-container h1 {
+body.toplevel_page_xsl-control-panel .xsl-admin-header-container h1 {
   font-weight: 300;
   color: #FFFFFF;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-container {
+body.toplevel_page_xsl-control-panel .xsl-admin-content-container {
   padding: 1rem;
   display: -webkit-box;
   display: -moz-box;
@@ -98,17 +98,17 @@ body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-container {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-container .PROYECTO-admin-content-title {
+body.toplevel_page_xsl-control-panel .xsl-admin-content-container .xsl-admin-content-title {
   ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 2rem;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-container .PROYECTO-admin-content-title h2 {
+body.toplevel_page_xsl-control-panel .xsl-admin-content-container .xsl-admin-content-title h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-container .PROYECTO-admin-content-item {
+body.toplevel_page_xsl-control-panel .xsl-admin-content-container .xsl-admin-content-item {
   ms-flex: 0 0 33%;
   flex: 0 0 30%;
   max-width: 30%;
@@ -117,23 +117,23 @@ body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-container .PRO
   padding: 1rem;
   margin-bottom: 1rem;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-container .PROYECTO-admin-content-item .form-table th {
+body.toplevel_page_xsl-control-panel .xsl-admin-content-container .xsl-admin-content-item .form-table th {
   width: 170px;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-container .PROYECTO-admin-content-item label {
+body.toplevel_page_xsl-control-panel .xsl-admin-content-container .xsl-admin-content-item label {
   display: block;
   vertical-align: middle;
   margin-bottom: 5px;
   text-align: right;
 }
-body.toplevel_page_PROYECTO-control-panel .PROYECTO-admin-content-submit {
+body.toplevel_page_xsl-control-panel .xsl-admin-content-submit {
   ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 /* WP CUSTOMIZE */
-#accordion-section-PREFIJO_social_settings .accordion-section-title,
-#accordion-section-PREFIJO_cookie_settings .accordion-section-title {
+#accordion-section-xsl_social_settings .accordion-section-title,
+#accordion-section-xsl_cookie_settings .accordion-section-title {
   background: #24405c;
   color: #FFFFFF;
 }

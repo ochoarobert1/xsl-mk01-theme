@@ -58,9 +58,9 @@ function be_metabox_show_on_slug( $display, $meta_box ) {
 }
 add_filter( 'cmb2_show_on', 'be_metabox_show_on_slug', 10, 2 );
 
-add_action( 'cmb2_admin_init', 'PROYECTO_register_custom_metabox' );
-function PROYECTO_register_custom_metabox() {
-    $prefix = 'PREFIJO_';
+add_action( 'cmb2_admin_init', 'xsl_register_custom_metabox' );
+function xsl_register_custom_metabox() {
+    $prefix = 'xsl_';
 
     $cmb_metabox = new_cmb2_box( array(
         'id'            => $prefix . 'metabox',

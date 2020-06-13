@@ -2,8 +2,8 @@
 /**
 * Template Name: Template - Pagina sin Título
 *
-* @package PROYECTO
-* @subpackage PROYECTO-mk01-theme
+* @package xsl
+* @subpackage xsl-mk01-theme
 * @since Mk. 1.0
 */
 ?>

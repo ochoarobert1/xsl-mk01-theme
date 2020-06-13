@@ -3,20 +3,20 @@
 WP CUSTOMIZE SECTION - CUSTOM SETTINGS
 -------------------------------------------------------------- */
 
-add_action( 'customize_register', 'PROYECTO_customize_register' );
+add_action( 'customize_register', 'xsl_customize_register' );
 
-function PROYECTO_customize_register( $wp_customize ) {
+function xsl_customize_register( $wp_customize ) {
 
     /* SOCIAL */
-    $wp_customize->add_section('PREFIJO_social_settings', array(
-        'title'    => __('Redes Sociales', 'PROYECTO'),
-        'description' => __('Agregue aqui las redes sociales de la página, serán usadas globalmente', 'PROYECTO'),
+    $wp_customize->add_section('xsl_social_settings', array(
+        'title'    => __('Redes Sociales', 'xsl'),
+        'description' => __('Agregue aqui las redes sociales de la página, serán usadas globalmente', 'xsl'),
         'priority' => 175,
     ));
 
-    $wp_customize->add_setting('PREFIJO_social_settings[facebook]', array(
+    $wp_customize->add_setting('xsl_social_settings[facebook]', array(
         'default'           => '',
-        'sanitize_callback' => 'PROYECTO_sanitize_url',
+        'sanitize_callback' => 'xsl_sanitize_url',
         'capability'        => 'edit_theme_options',
         'type'           => 'option',
 
@@ -24,14 +24,14 @@ function PROYECTO_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'facebook', array(
         'type' => 'url',
-        'section' => 'PREFIJO_social_settings',
-        'settings' => 'PREFIJO_social_settings[facebook]',
-        'label' => __( 'Facebook', 'PROYECTO' ),
+        'section' => 'xsl_social_settings',
+        'settings' => 'xsl_social_settings[facebook]',
+        'label' => __( 'Facebook', 'xsl' ),
     ) );
 
-    $wp_customize->add_setting('PREFIJO_social_settings[twitter]', array(
+    $wp_customize->add_setting('xsl_social_settings[twitter]', array(
         'default'           => '',
-        'sanitize_callback' => 'PROYECTO_sanitize_url',
+        'sanitize_callback' => 'xsl_sanitize_url',
         'capability'        => 'edit_theme_options',
         'type'           => 'option',
 
@@ -39,14 +39,14 @@ function PROYECTO_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'twitter', array(
         'type' => 'url',
-        'section' => 'PREFIJO_social_settings',
-        'settings' => 'PREFIJO_social_settings[twitter]',
-        'label' => __( 'Twitter', 'PROYECTO' ),
+        'section' => 'xsl_social_settings',
+        'settings' => 'xsl_social_settings[twitter]',
+        'label' => __( 'Twitter', 'xsl' ),
     ) );
 
-    $wp_customize->add_setting('PREFIJO_social_settings[instagram]', array(
+    $wp_customize->add_setting('xsl_social_settings[instagram]', array(
         'default'           => '',
-        'sanitize_callback' => 'PROYECTO_sanitize_url',
+        'sanitize_callback' => 'xsl_sanitize_url',
         'capability'        => 'edit_theme_options',
         'type'           => 'option',
 
@@ -54,14 +54,14 @@ function PROYECTO_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'instagram', array(
         'type' => 'url',
-        'section' => 'PREFIJO_social_settings',
-        'settings' => 'PREFIJO_social_settings[instagram]',
-        'label' => __( 'Instagram', 'PROYECTO' ),
+        'section' => 'xsl_social_settings',
+        'settings' => 'xsl_social_settings[instagram]',
+        'label' => __( 'Instagram', 'xsl' ),
     ) );
 
-    $wp_customize->add_setting('PREFIJO_social_settings[linkedin]', array(
+    $wp_customize->add_setting('xsl_social_settings[linkedin]', array(
         'default'           => '',
-        'sanitize_callback' => 'PROYECTO_sanitize_url',
+        'sanitize_callback' => 'xsl_sanitize_url',
         'capability'        => 'edit_theme_options',
         'type'           => 'option',
 
@@ -69,14 +69,14 @@ function PROYECTO_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'linkedin', array(
         'type' => 'url',
-        'section' => 'PREFIJO_social_settings',
-        'settings' => 'PREFIJO_social_settings[linkedin]',
-        'label' => __( 'LinkedIn', 'PROYECTO' ),
+        'section' => 'xsl_social_settings',
+        'settings' => 'xsl_social_settings[linkedin]',
+        'label' => __( 'LinkedIn', 'xsl' ),
     ) );
 
-    $wp_customize->add_setting('PREFIJO_social_settings[youtube]', array(
+    $wp_customize->add_setting('xsl_social_settings[youtube]', array(
         'default'           => '',
-        'sanitize_callback' => 'PROYECTO_sanitize_url',
+        'sanitize_callback' => 'xsl_sanitize_url',
         'capability'        => 'edit_theme_options',
         'type'           => 'option',
 
@@ -84,14 +84,14 @@ function PROYECTO_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'youtube', array(
         'type' => 'url',
-        'section' => 'PREFIJO_social_settings',
-        'settings' => 'PREFIJO_social_settings[youtube]',
-        'label' => __( 'YouTube', 'PROYECTO' ),
+        'section' => 'xsl_social_settings',
+        'settings' => 'xsl_social_settings[youtube]',
+        'label' => __( 'YouTube', 'xsl' ),
     ) );
 
-    $wp_customize->add_setting('PREFIJO_social_settings[yelp]', array(
+    $wp_customize->add_setting('xsl_social_settings[yelp]', array(
         'default'           => '',
-        'sanitize_callback' => 'PROYECTO_sanitize_url',
+        'sanitize_callback' => 'xsl_sanitize_url',
         'capability'        => 'edit_theme_options',
         'type'           => 'option',
 
@@ -99,19 +99,19 @@ function PROYECTO_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'yelp', array(
         'type' => 'url',
-        'section' => 'PREFIJO_social_settings',
-        'settings' => 'PREFIJO_social_settings[yelp]',
-        'label' => __( 'Yelp', 'PROYECTO' ),
+        'section' => 'xsl_social_settings',
+        'settings' => 'xsl_social_settings[yelp]',
+        'label' => __( 'Yelp', 'xsl' ),
     ) );
 
 
-    $wp_customize->add_section('PREFIJO_cookie_settings', array(
-        'title'    => __('Cookies', 'PROYECTO'),
-        'description' => __('Opciones de Cookies', 'PROYECTO'),
+    $wp_customize->add_section('xsl_cookie_settings', array(
+        'title'    => __('Cookies', 'xsl'),
+        'description' => __('Opciones de Cookies', 'xsl'),
         'priority' => 176,
     ));
 
-    $wp_customize->add_setting('PREFIJO_cookie_settings[cookie_text]', array(
+    $wp_customize->add_setting('xsl_cookie_settings[cookie_text]', array(
         'default'           => '',
         'sanitize_callback' => 'sanitize_text_field',
         'capability'        => 'edit_theme_options',
@@ -121,13 +121,13 @@ function PROYECTO_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'cookie_text', array(
         'type' => 'textarea',
-        'label'    => __('Cookie consent', 'PROYECTO'),
+        'label'    => __('Cookie consent', 'xsl'),
         'description' => __( 'Texto del Cookie consent.' ),
-        'section'  => 'PREFIJO_cookie_settings',
-        'settings' => 'PREFIJO_cookie_settings[cookie_text]'
+        'section'  => 'xsl_cookie_settings',
+        'settings' => 'xsl_cookie_settings[cookie_text]'
     ));
 
-    $wp_customize->add_setting('PREFIJO_cookie_settings[cookie_link]', array(
+    $wp_customize->add_setting('xsl_cookie_settings[cookie_link]', array(
         'default'           => '',
         'sanitize_callback' => 'absint',
         'capability'        => 'edit_theme_options',
@@ -137,14 +137,14 @@ function PROYECTO_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'cookie_link', array(
         'type'     => 'dropdown-pages',
-        'section' => 'PREFIJO_cookie_settings',
-        'settings' => 'PREFIJO_cookie_settings[cookie_link]',
-        'label' => __( 'Link de Cookies', 'PROYECTO' ),
+        'section' => 'xsl_cookie_settings',
+        'settings' => 'xsl_cookie_settings[cookie_link]',
+        'label' => __( 'Link de Cookies', 'xsl' ),
     ) );
 
 }
 
-function PROYECTO_sanitize_url( $url ) {
+function xsl_sanitize_url( $url ) {
     return esc_url_raw( $url );
 }
 
@@ -152,41 +152,41 @@ function PROYECTO_sanitize_url( $url ) {
 CUSTOM CONTROL PANEL
 -------------------------------------------------------------- */
 
-function register_PROYECTO_settings() {
-    register_setting( 'PROYECTO-settings-group', 'monday_start' );
-    register_setting( 'PROYECTO-settings-group', 'monday_end' );
-    register_setting( 'PROYECTO-settings-group', 'monday_all' );
+function register_xsl_settings() {
+    register_setting( 'xsl-settings-group', 'monday_start' );
+    register_setting( 'xsl-settings-group', 'monday_end' );
+    register_setting( 'xsl-settings-group', 'monday_all' );
 }
 
-add_action('admin_menu', 'PROYECTO_custom_panel_control');
+add_action('admin_menu', 'xsl_custom_panel_control');
 
-function PROYECTO_custom_panel_control() {
+function xsl_custom_panel_control() {
     add_menu_page(
-        __( 'Panel de Control', 'PROYECTO' ),
-        __( 'Panel de Control','PROYECTO' ),
+        __( 'Panel de Control', 'xsl' ),
+        __( 'Panel de Control','xsl' ),
         'manage_options',
-        'PROYECTO-control-panel',
-        'PROYECTO_control_panel_callback',
+        'xsl-control-panel',
+        'xsl_control_panel_callback',
         'dashicons-admin-generic',
         120
     );
-    add_action( 'admin_init', 'register_PROYECTO_settings' );
+    add_action( 'admin_init', 'register_xsl_settings' );
 }
 
-function PROYECTO_control_panel_callback() {
+function xsl_control_panel_callback() {
     ob_start();
 ?>
-<div class="PROYECTO-admin-header-container">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="PROYECTO" />
+<div class="xsl-admin-header-container">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="xsl" />
     <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 </div>
-<form method="post" action="options.php" class="PROYECTO-admin-content-container">
-    <?php settings_fields( 'PROYECTO-settings-group' ); ?>
-    <?php do_settings_sections( 'PROYECTO-settings-group' ); ?>
-    <div class="PROYECTO-admin-content-item">
+<form method="post" action="options.php" class="xsl-admin-content-container">
+    <?php settings_fields( 'xsl-settings-group' ); ?>
+    <?php do_settings_sections( 'xsl-settings-group' ); ?>
+    <div class="xsl-admin-content-item">
         <table class="form-table">
             <tr valign="center">
-                <th scope="row"><?php _e('Monday', 'PROYECTO'); ?></th>
+                <th scope="row"><?php _e('Monday', 'xsl'); ?></th>
                 <td>
                     <label for="monday_start">Starting Hour: <input type="time" name="monday_start" value="<?php echo esc_attr( get_option('monday_start') ); ?>"></label>
                     <label for="monday_end">Ending Hour: <input type="time" name="monday_end" value="<?php echo esc_attr( get_option('monday_end') ); ?>"></label>
@@ -195,7 +195,7 @@ function PROYECTO_control_panel_callback() {
             </tr>
         </table>
     </div>
-    <div class="PROYECTO-admin-content-submit">
+    <div class="xsl-admin-content-submit">
         <?php submit_button(); ?>
     </div>
 </form>

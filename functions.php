@@ -10,8 +10,8 @@ require_once('includes/wp_enqueue_styles.php');
     ENQUEUE AND REGISTER JS
 -------------------------------------------------------------- */
 
-if (!is_admin()) add_action('wp_enqueue_scripts', 'PROYECTO_jquery_enqueue');
-function PROYECTO_jquery_enqueue() {
+if (!is_admin()) add_action('wp_enqueue_scripts', 'xsl_jquery_enqueue');
+function xsl_jquery_enqueue() {
     wp_deregister_script('jquery');
     wp_deregister_script('jquery-migrate');
     if ($_SERVER['REMOTE_ADDR'] == '::1') {
@@ -37,8 +37,8 @@ require_once('includes/wp_enqueue_scripts.php');
     ADD CUSTOM WALKER BOOTSTRAP
 -------------------------------------------------------------- */
 
-add_action( 'after_setup_theme', 'PROYECTO_register_navwalker' );
-function PROYECTO_register_navwalker(){
+add_action( 'after_setup_theme', 'xsl_register_navwalker' );
+function xsl_register_navwalker(){
     require_once('includes/class-wp-bootstrap-navwalker.php');
 }
 
@@ -73,7 +73,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
     ADD THEME SUPPORT
 -------------------------------------------------------------- */
 
-load_theme_textdomain( 'PROYECTO', get_template_directory() . '/languages' );
+load_theme_textdomain( 'xsl', get_template_directory() . '/languages' );
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio' ));
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'automatic-feed-links' );
@@ -110,19 +110,19 @@ add_theme_support( 'html5', array(
 -------------------------------------------------------------- */
 
 register_nav_menus( array(
-    'header_menu' => __( 'Menu Header - Principal', 'PROYECTO' )
+    'header_menu' => __( 'Menu Header - Principal', 'xsl' )
 ) );
 
 /* --------------------------------------------------------------
     ADD DYNAMIC SIDEBAR SUPPORT
 -------------------------------------------------------------- */
 
-add_action( 'widgets_init', 'PROYECTO_widgets_init' );
-function PROYECTO_widgets_init() {
+add_action( 'widgets_init', 'xsl_widgets_init' );
+function xsl_widgets_init() {
     register_sidebar( array(
-        'name' => __( 'Sidebar Principal', 'PROYECTO' ),
+        'name' => __( 'Sidebar Principal', 'xsl' ),
         'id' => 'main_sidebar',
-        'description' => __( 'Estos widgets seran vistos en las entradas y páginas del sitio', 'PROYECTO' ),
+        'description' => __( 'Estos widgets seran vistos en las entradas y páginas del sitio', 'xsl' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget'  => '</li>',
         'before_title'  => '<h2 class="widgettitle">',
@@ -130,9 +130,9 @@ function PROYECTO_widgets_init() {
     ) );
 
     register_sidebars( 4, array(
-        'name'          => __('Footer Section %d', 'PROYECTO'),
+        'name'          => __('Footer Section %d', 'xsl'),
         'id'            => 'sidebar_footer',
-        'description'   => __('Footer Section', 'PROYECTO'),
+        'description'   => __('Footer Section', 'xsl'),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget'  => '</li>',
         'before_title'  => '<h2 class="widgettitle">',
@@ -140,9 +140,9 @@ function PROYECTO_widgets_init() {
     ) );
 
     //    register_sidebar( array(
-    //        'name' => __( 'Shop Sidebar', 'PROYECTO' ),
+    //        'name' => __( 'Shop Sidebar', 'xsl' ),
     //        'id' => 'shop_sidebar',
-    //        'description' => __( 'Estos widgets seran vistos en Tienda y Categorias de Producto', 'PROYECTO' ),
+    //        'description' => __( 'Estos widgets seran vistos en Tienda y Categorias de Producto', 'xsl' ),
     //        'before_widget' => '<li id='%1$s' class='widget %2$s'>',
     //        'after_widget'  => '</li>',
     //        'before_title'  => '<h2 class='widgettitle'>',
@@ -165,10 +165,10 @@ add_action('admin_init', 'custom_admin_styles');
 
 function dashboard_footer() {
     echo '<span id="footer-thankyou">';
-    _e ('Gracias por crear con ', 'PROYECTO' );
+    _e ('Gracias por crear con ', 'xsl' );
     echo '<a href="http://wordpress.org/" target="_blank">WordPress.</a> - ';
-    _e ('Tema desarrollado por ', 'PROYECTO' );
-    echo '<a href="http://robertochoa.com.ve/?utm_source=footer_admin&utm_medium=link&utm_content=PROYECTO" target="_blank">Robert Ochoa</a></span>';
+    _e ('Tema desarrollado por ', 'xsl' );
+    echo '<a href="http://robertochoa.com.ve/?utm_source=footer_admin&utm_medium=link&utm_content=xsl" target="_blank">Robert Ochoa</a></span>';
 }
 add_filter('admin_footer_text', 'dashboard_footer');
 

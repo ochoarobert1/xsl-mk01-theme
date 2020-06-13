@@ -331,65 +331,65 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
             // Load class strings.
             $this->strings = array(
-                'page_title'                      => __( 'Instalar Plugins Requeridos', 'PROYECTO' ),
-                'menu_title'                      => __( 'Instalar Plugins', 'PROYECTO' ),
-                'installing'                      => __( 'Instalando Plugin: %s', 'PROYECTO' ),
-                'updating'                        => __( 'Actualizando Plugin: %s', 'PROYECTO' ),
-                'oops'                            => __( 'Ocurrió un error con el API del plugin.', 'PROYECTO' ),
+                'page_title'                      => __( 'Instalar Plugins Requeridos', 'xsl' ),
+                'menu_title'                      => __( 'Instalar Plugins', 'xsl' ),
+                'installing'                      => __( 'Instalando Plugin: %s', 'xsl' ),
+                'updating'                        => __( 'Actualizando Plugin: %s', 'xsl' ),
+                'oops'                            => __( 'Ocurrió un error con el API del plugin.', 'xsl' ),
                 'notice_can_install_required'     => _n_noop(
                     'Este tema requiere el siguiente plugin: %1$s.',
                     'Este tema requiere los siguientes plugins: %1$s.',
-                    'PROYECTO'
+                    'xsl'
                 ),
                 'notice_can_install_recommended'  => _n_noop(
                     'Este tema recomienda el siguiente plugin: %1$s.',
                     'Este tema recomienda los siguientes plugins: %1$s.',
-                    'PROYECTO'
+                    'xsl'
                 ),
                 'notice_ask_to_update'            => _n_noop(
                     'El siguiente plugin necesita ser actualizado a su última versión para asegurar su compatibilidad con este tema: %1$s.',
                     'Los siguientes plugins necesitan ser actualizados a su última versión para asegurar su compatibilidad con este tema: %1$s.',
-                    'PROYECTO'
+                    'xsl'
                 ),
                 'notice_ask_to_update_maybe'      => _n_noop(
                     'Hay una actualización disponible para: %1$s.',
                     'Hay actualizaciones disponible para los siguientes plugins: %1$s.',
-                    'PROYECTO'
+                    'xsl'
                 ),
                 'notice_can_activate_required'    => _n_noop(
                     'El siguiente plugin requerido esta actualmente desactivado: %1$s.',
                     'Los siguientes plugins requeridos estan actualmente desactivados: %1$s.',
-                    'PROYECTO'
+                    'xsl'
                 ),
                 'notice_can_activate_recommended' => _n_noop(
                     'Este plugin recomendado esta actualmente desactivado: %1$s.',
                     'Los siguientes plugins recomendados estan actualmente desactivados: %1$s.',
-                    'PROYECTO'
+                    'xsl'
                 ),
                 'install_link'                    => _n_noop(
                     'Iniciar la instalación del plugin',
                     'Iniciar la instalación de los plugins',
-                    'PROYECTO'
+                    'xsl'
                 ),
                 'update_link'                       => _n_noop(
                     'Iniciar la actualización del plugin',
                     'Iniciar la actualización de los plugins',
-                    'PROYECTO'
+                    'xsl'
                 ),
                 'activate_link'                   => _n_noop(
                     'Iniciar la activación del plugin',
                     'Iniciar la activación de los plugins',
-                    'PROYECTO'
+                    'xsl'
                 ),
-                'return'                          => __( 'Volver al Instalador de plugins requeridos', 'PROYECTO' ),
-                'plugin_activated'                => __( 'Plugin activado con éxito.', 'PROYECTO' ),
-                'activated_successfully'          => __( 'El siguiente plugin ha sido activado exitosamente:', 'PROYECTO' ),
-                'plugin_already_active'           => __( 'No se tomón ninguna acción. El plugin %1$s ya estaba activado.', 'PROYECTO' ),
-                'plugin_needs_higher_version'     => __( 'Plugin no activo. Una versión mas alta de %s es necesaria para este tema. Por favor, actualiza el plugin.', 'PROYECTO' ),
-                'complete'                        => __( 'Todos los plugins han sido instalados y activados exitosamente. %1$s', 'PROYECTO' ),
-                'dismiss'                         => __( 'Ocultar este aviso', 'PROYECTO' ),
-                'notice_cannot_install_activate'  => __( 'Hay uno o más plugins necesarios o recomendados para instalar, actualizar o activar.', 'PROYECTO' ),
-                'contact_admin'                   => __( 'Por favor, contacte con el administrador de este sitio para mas ayuda.', 'PROYECTO' )
+                'return'                          => __( 'Volver al Instalador de plugins requeridos', 'xsl' ),
+                'plugin_activated'                => __( 'Plugin activado con éxito.', 'xsl' ),
+                'activated_successfully'          => __( 'El siguiente plugin ha sido activado exitosamente:', 'xsl' ),
+                'plugin_already_active'           => __( 'No se tomón ninguna acción. El plugin %1$s ya estaba activado.', 'xsl' ),
+                'plugin_needs_higher_version'     => __( 'Plugin no activo. Una versión mas alta de %s es necesaria para este tema. Por favor, actualiza el plugin.', 'xsl' ),
+                'complete'                        => __( 'Todos los plugins han sido instalados y activados exitosamente. %1$s', 'xsl' ),
+                'dismiss'                         => __( 'Ocultar este aviso', 'xsl' ),
+                'notice_cannot_install_activate'  => __( 'Hay uno o más plugins necesarios o recomendados para instalar, actualizar o activar.', 'xsl' ),
+                'contact_admin'                   => __( 'Por favor, contacte con el administrador de este sitio para mas ayuda.', 'xsl' )
             );
 
             do_action( 'tgmpa_register' );
@@ -592,8 +592,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
             $actions['update'] = sprintf(
                 '<a href="%1$s" title="%2$s" class="edit">%3$s</a>',
                 esc_url( $this->get_tgmpa_status_url( 'update' ) ),
-                esc_attr__( 'Este plugin necesita ser actualizado para ser compatible con este tema.', 'PROYECTO' ),
-                esc_html__( 'Actualización Requerida', 'PROYECTO' )
+                esc_attr__( 'Este plugin necesita ser actualizado para ser compatible con este tema.', 'xsl' ),
+                esc_html__( 'Actualización Requerida', 'xsl' )
             );
 
             return $actions;
@@ -905,7 +905,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
                 // Display message based on if all plugins are now active or not.
                 if ( $this->is_tgmpa_complete() ) {
-                    echo '<p>', sprintf( esc_html( $this->strings['complete'] ), '<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Volver al Escritorio', 'PROYECTO' ) . '</a>' ), '</p>';
+                    echo '<p>', sprintf( esc_html( $this->strings['complete'] ), '<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Volver al Escritorio', 'xsl' ) . '</a>' ), '</p>';
                     echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
                 } else {
                     echo '<p><a href="', esc_url( $this->get_tgmpa_url() ), '" target="_parent">', esc_html( $this->strings['return'] ), '</a></p>';
@@ -2466,11 +2466,11 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 switch ( $type ) {
                     case 'all':
                         /* translators: 1: number of plugins. */
-                        $text = _nx( 'Todos <span class="count">(%s)</span>', 'Todos <span class="count">(%s)</span>', $count, 'plugins', 'PROYECTO' );
+                        $text = _nx( 'Todos <span class="count">(%s)</span>', 'Todos <span class="count">(%s)</span>', $count, 'plugins', 'xsl' );
                         break;
                     case 'install':
                         /* translators: 1: number of plugins. */
-                        $text = _n( 'Por Instalar <span class="count">(%s)</span>', 'Por Instalar <span class="count">(%s)</span>', $count, 'PROYECTO' );
+                        $text = _n( 'Por Instalar <span class="count">(%s)</span>', 'Por Instalar <span class="count">(%s)</span>', $count, 'xsl' );
                         break;
                     case 'update':
                         /* translators: 1: number of plugins. */
@@ -2681,18 +2681,18 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
             // Display the 'Install' action link if the plugin is not yet available.
             if ( ! $this->tgmpa->is_plugin_installed( $item['slug'] ) ) {
                 /* translators: %2$s: plugin name in screen reader markup */
-                $actions['install'] = __( 'Instalar %2$s', 'PROYECTO' );
+                $actions['install'] = __( 'Instalar %2$s', 'xsl' );
             } else {
                 // Display the 'Update' action link if an update is available and WP complies with plugin minimum.
                 if ( false !== $this->tgmpa->does_plugin_have_update( $item['slug'] ) && $this->tgmpa->can_plugin_update( $item['slug'] ) ) {
                     /* translators: %2$s: plugin name in screen reader markup */
-                    $actions['update'] = __( 'Actualizar %2$s', 'PROYECTO' );
+                    $actions['update'] = __( 'Actualizar %2$s', 'xsl' );
                 }
 
                 // Display the 'Activate' action link, but only if the plugin meets the minimum version.
                 if ( $this->tgmpa->can_plugin_activate( $item['slug'] ) ) {
                     /* translators: %2$s: plugin name in screen reader markup */
-                    $actions['activate'] = __( 'Activar %2$s', 'PROYECTO' );
+                    $actions['activate'] = __( 'Activar %2$s', 'xsl' );
                 }
             }
 
@@ -2878,9 +2878,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 // No need to proceed further if we have no plugins to handle.
                 if ( empty( $plugins_to_install ) ) {
                     if ( 'install' === $install_type ) {
-                        $message = __( 'No hay plugins disponibles para ser instalados ahora mismo.', 'PROYECTO' );
+                        $message = __( 'No hay plugins disponibles para ser instalados ahora mismo.', 'xsl' );
                     } else {
-                        $message = __( 'No hay plugins disponibles para ser actualizados ahora mismo.', 'PROYECTO' );
+                        $message = __( 'No hay plugins disponibles para ser actualizados ahora mismo.', 'xsl' );
                     }
 
                     echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
