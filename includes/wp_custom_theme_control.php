@@ -7,6 +7,59 @@ add_action( 'customize_register', 'xsl_customize_register' );
 
 function xsl_customize_register( $wp_customize ) {
 
+    /* HEADER */
+    $wp_customize->add_section('xsl_header_settings', array(
+        'title'    => __('Cabecera', 'xsl'),
+        'description' => __('Opciones para los elementos de la cabecera', 'xsl'),
+        'priority' => 30
+    ));
+
+    $wp_customize->add_setting('xsl_header_settings[phone_number]', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+        'capability'        => 'edit_theme_options',
+        'type'           => 'option'
+    ));
+
+    $wp_customize->add_control( 'phone_number', array(
+        'type' => 'text',
+        'label'    => __('Número Telefónico', 'xsl'),
+        'description' => __( 'Agregar número telefonico con formato para el link', 'xsl' ),
+        'section'  => 'xsl_header_settings',
+        'settings' => 'xsl_header_settings[phone_number]'
+    ));
+
+    $wp_customize->add_setting('xsl_header_settings[formatted_phone_number]', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+        'capability'        => 'edit_theme_options',
+        'type'           => 'option'
+    ));
+
+    $wp_customize->add_control( 'formatted_phone_number', array(
+        'type' => 'text',
+        'label'    => __('Número Telefónico [Visible]', 'xsl'),
+        'description' => __( 'Agregar número telefónico en un formato visible para el público', 'xsl' ),
+        'section'  => 'xsl_header_settings',
+        'settings' => 'xsl_header_settings[formatted_phone_number]'
+    ));
+
+    $wp_customize->add_setting('xsl_header_settings[email_address]', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+        'capability'        => 'edit_theme_options',
+        'type'           => 'option'
+
+    ));
+
+    $wp_customize->add_control( 'email_address', array(
+        'type' => 'text',
+        'label'    => __('Correo Electrónico', 'xsl'),
+        'description' => __( 'Agregar direccion de Correo Electrónico', 'xsl' ),
+        'section'  => 'xsl_header_settings',
+        'settings' => 'xsl_header_settings[email_address]'
+    ));
+
     /* SOCIAL */
     $wp_customize->add_section('xsl_social_settings', array(
         'title'    => __('Redes Sociales', 'xsl'),
@@ -151,7 +204,7 @@ function xsl_sanitize_url( $url ) {
 /* --------------------------------------------------------------
 CUSTOM CONTROL PANEL
 -------------------------------------------------------------- */
-
+/*
 function register_xsl_settings() {
     register_setting( 'xsl-settings-group', 'monday_start' );
     register_setting( 'xsl-settings-group', 'monday_end' );
@@ -199,7 +252,8 @@ function xsl_control_panel_callback() {
         <?php submit_button(); ?>
     </div>
 </form>
-<?php 
+<?php
     $content = ob_get_clean();
     echo $content;
 }
+*/

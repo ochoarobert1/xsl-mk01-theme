@@ -11,6 +11,14 @@ LOGIN PAGE
 body.login {
   background-color: #23282D;
 }
+.login h1 a {
+  background: url(../images/logo-white.png);
+  width: 100%;
+  margin: 1rem auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 .login #nav {
   text-align: center;
 }

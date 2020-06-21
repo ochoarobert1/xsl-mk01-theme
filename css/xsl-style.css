@@ -13,7 +13,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
 a {
@@ -31,9 +31,162 @@ a:hover {
 /* --------------------------------------------------------------
 1.- HEADER
 -------------------------------------------------------------- */
+.top-header {
+  padding: 0.5rem;
+}
+.top-header .top-header-left a {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  color: #000000;
+}
+.top-header .top-header-left .social-header {
+  display: inline-block;
+}
+.top-header .top-header-left .social-header a {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+}
+.top-header .top-header-right {
+  text-align: right;
+}
+.top-header .top-header-right .btn-language:after {
+  display: none;
+}
+.top-header .top-header-right .btn-language:focus {
+  outline: none;
+  box-shadow: none;
+}
+.top-header .top-header-right .btn-language .bars {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 15px;
+  width: 25px;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+.top-header .top-header-right .btn-language .bars span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000000;
+}
+.top-header .top-header-right .btn-language .bars span:nth-child(1) {
+  top: 0;
+}
+.top-header .top-header-right .btn-language .bars span:nth-child(2) {
+  top: 5px;
+}
+.top-header .top-header-right .btn-language .bars span:nth-child(3) {
+  top: 10px;
+}
+.top-header .top-header-right .searchform {
+  max-width: 300px;
+  display: inline-block;
+}
+.top-header .top-header-right .searchform .form-control {
+  background: #f4f4f4;
+  border-radius: 0;
+  border: 0;
+  font-size: 0.9rem;
+}
+.top-header .top-header-right .searchform .btn-outline-secondary {
+  border-color: transparent;
+  border: 0;
+  font-size: 1.1rem;
+}
+.the-header {
+  padding: 1rem;
+}
+.the-header .navbar-nav .nav-item .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0 2.5rem;
+}
+.the-header .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
 /* --------------------------------------------------------------
 2.- FOOTER
 -------------------------------------------------------------- */
 /* --------------------------------------------------------------
 3.- HOME
 -------------------------------------------------------------- */
+.main-banner {
+  position: relative;
+}
+.main-banner:before {
+  content: '';
+  position: absolute;
+  background: #193278;
+  height: 85%;
+  width: 100%;
+  left: 0;
+  top: 7%;
+}
+.main-banner:after {
+  content: '';
+  position: absolute;
+  background: rgba(246, 190, 216, 0.6);
+  height: 85%;
+  width: 100px;
+  right: 0;
+  top: 7%;
+}
+.main-banner .main-banner-text {
+  position: absolute;
+  z-index: 9;
+  background: rgba(25, 50, 120, 0.6);
+  color: #ffffff;
+  padding: 5rem 3rem;
+  top: 7%;
+  height: 85%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+}
+.main-banner .main-banner-text h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 3.8rem;
+}
+.main-banner .main-banner-text h1 strong {
+  display: block;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  letter-spacing: -1px;
+}
+.main-banner .main-banner-text h2 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+.main-banner .main-banner-text h2:before {
+  content: '';
+  display: block;
+  height: 30px;
+  width: 50%;
+  background: #F6BED8;
+  margin: 1rem 0;
+}
+.main-banner .main-banner-text h2:after {
+  content: ' ';
+  width: 100%;
+  height: 2px;
+  background: #F6BED8;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.main-banner .main-banner-image img {
+  width: 100%;
+}

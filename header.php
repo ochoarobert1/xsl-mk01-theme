@@ -19,17 +19,17 @@
     <?php /* FAVICONS */ ?>
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon.png" />
     <?php /* THEME NAVBAR COLOR */ ?>
-    <meta name="msapplication-TileColor" content="#454545" />
+    <meta name="msapplication-TileColor" content="#1B357F" />
     <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/images/win8-tile-icon.png" />
-    <meta name="theme-color" content="#454545" />
+    <meta name="theme-color" content="#1B357F" />
     <?php /* AUTHOR INFORMATION */ ?>
     <meta name="language" content="<?php echo get_bloginfo('language'); ?>" />
-    <meta name="author" content="ADMIN_SITIO" />
-    <meta name="copyright" content="DIRECCION_URL" />
+    <meta name="author" content="Extreme Shooting Locations" />
+    <meta name="copyright" content="https://thexsl.com/" />
     <meta name="geo.position" content="10.333333;-67.033333" />
     <meta name="ICBM" content="10.333333, -67.033333" />
-    <meta name="geo.region" content="VE" />
-    <meta name="geo.placename" content="DIRECCION_AUTOR" />
+    <meta name="geo.region" content="ES" />
+    <meta name="geo.placename" content="Extreme Shooting Locations" />
     <meta name="DC.title" content="<?php if (is_home()) { echo get_bloginfo('name') . ' | ' . get_bloginfo('description'); } else { echo get_the_title() . ' | ' . get_bloginfo('name'); } ?>" />
     <?php /* MAIN TITLE - CALL HEADER MAIN FUNCTIONS */ ?>
     <?php wp_title('|', false, 'right'); ?>
@@ -49,10 +49,58 @@
 </head>
 
 <body class="the-main-body <?php echo join(' ', get_body_class()); ?>" itemscope itemtype="http://schema.org/WebPage">
-    <div id="fb-root"></div>
+    <?php $header_options = get_option('xsl_header_settings'); ?>
+    <?php $social_options = get_option('xsl_social_settings'); ?>
+    <?php $network_url = network_home_url(); ?>
     <header class="container-fluid p-0" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-        <div class="row no-gutters">
-            <div class="the-header col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="row justify-content-center no-gutters">
+            <div class="top-header col-xl-11 col-lg-11 col-md-12 col-sm-12 col-12">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="top-header-left col-6">
+                            <?php if ($header_options['email_address'] != '') { ?>
+                            <a href="mailto:<?php echo $header_options['email_address']; ?>" title="<?php _e('Haz clic aquí para dejar tu mensaje en nuestro correo electrónico', 'xsl'); ?>"><?php echo $header_options['email_address']; ?></a>
+                            <?php } ?>
+
+                            <?php if ($header_options['phone_number'] != '') { ?>
+                            <a href="<?php echo $header_options['phone_number']; ?>" title="<?php _e('Haz clic aquí para llamar directamente a nuestro Master', 'xsl'); ?>"><?php echo $header_options['formatted_phone_number']; ?></a>
+                            <?php } ?>
+
+                            <div class="social-header">
+                                <?php if ($social_options['facebook'] != '') { ?>
+                                <a href="<?php echo $social_options['facebook']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <?php } ?>
+
+                                <?php if ($social_options['twitter'] != '') { ?>
+                                <a href="<?php echo $social_options['twitter']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <?php } ?>
+
+                                <?php if ($social_options['instagram'] != '') { ?>
+                                <a href="<?php echo $social_options['instagram']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-instagram"></i></a>
+                                <?php } ?>
+
+                                <?php if ($social_options['youtube'] != '') { ?>
+                                <a href="<?php echo $social_options['youtube']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-youtube"></i></a>
+                                <?php } ?>
+                            </div>
+                        </div>
+                        <div class="top-header-right col-6">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-language dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <?php _e('Idioma', 'xsl'); ?> <small class="bars"><span></span><span></span><span></span></small>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="<?php echo $network_url; ?>"><?php _e('Español', 'xsl'); ?></a>
+                                    <a class="dropdown-item" href="<?php echo $network_url . '/en'; ?>"><?php _e('Ingles', 'xsl'); ?></a>
+                                </div>
+                            </div>
+                            <?php echo get_search_form(); ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="the-header col-xl-11 col-lg-11 col-md-12 col-sm-12 col-12">
                 <nav class="navbar navbar-expand-md navbar-light" role="navigation">
                     <a class="navbar-brand" href="<?php echo home_url('/');?>" title="<?php echo get_bloginfo('name'); ?>">
                         <?php $custom_logo_id = get_theme_mod( 'custom_logo' ); ?>

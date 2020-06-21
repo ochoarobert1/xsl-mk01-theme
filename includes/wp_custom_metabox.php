@@ -59,33 +59,48 @@ function be_metabox_show_on_slug( $display, $meta_box ) {
 add_filter( 'cmb2_show_on', 'be_metabox_show_on_slug', 10, 2 );
 
 add_action( 'cmb2_admin_init', 'xsl_register_custom_metabox' );
+
 function xsl_register_custom_metabox() {
     $prefix = 'xsl_';
 
-    $cmb_metabox = new_cmb2_box( array(
-        'id'            => $prefix . 'metabox',
-        'title'         => esc_html__( 'Test Metabox', 'cmb2' ),
+    $cmb_page_metabox = new_cmb2_box( array(
+        'id'            => $prefix . 'page_general_metabox',
+        'title'         => esc_html__( 'Página: Banner General', 'xsl' ),
         'object_types'  => array( 'page' ), // Post type
-        // 'show_on_cb' => 'yourprefix_show_if_front_page', // function should return a bool value
-        // 'context'    => 'normal',
-        // 'priority'   => 'high',
-        // 'show_names' => true, // Show field names on the left
-        // 'cmb_styles' => false, // false to disable the CMB stylesheet
-        // 'closed'     => true, // true to keep the metabox closed by default
-        // 'classes'    => 'extra-class', // Extra cmb2-wrap classes
-        // 'classes_cb' => 'yourprefix_add_some_classes', // Add classes through a callback.
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'show_names' => true, // Show field names on the left
     ) );
 
-    $cmb_metabox->add_field( array(
-        'name'       => esc_html__( 'Test Text', 'cmb2' ),
-        'desc'       => esc_html__( 'field description (optional)', 'cmb2' ),
-        'id'         => $prefix . 'text',
-        'type'       => 'text',
-        'show_on_cb' => 'yourprefix_hide_if_no_cats', // function should return a bool value
-        // 'sanitization_cb' => 'my_custom_sanitization', // custom sanitization callback parameter
-        // 'escape_cb'       => 'my_custom_escaping',  // custom escaping callback parameter
-        // 'on_front'        => false, // Optionally designate a field to wp-admin only
-        // 'repeatable'      => true,
-        // 'column'          => true, // Display field value in the admin post-listing columns
+    $cmb_page_metabox->add_field( array(
+        'id'      => $prefix . 'page_general_banner_image',
+        'name'      => esc_html__( 'Imagen del Banner', 'xsl' ),
+        'desc'      => esc_html__( 'Cargue una imagen para el Banner Principal de la pagina', 'xsl' ),
+        'type'    => 'file',
+        'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
+        'query_args' => array( 'type' => 'image' ), // Only images attachment
+        'text' => array(
+            'add_upload_files_text' => 'Replacement', // default: "Add or Upload Files"
+            'remove_image_text' => 'Replacement', // default: "Remove Image"
+            'file_text' => 'Replacement', // default: "File:"
+            'file_download_text' => 'Replacement', // default: "Download"
+            'remove_text' => 'Replacement', // default: "Remove"
+        ),
     ) );
+
+    $cmb_page_metabox->add_field( array(
+        'id'         => $prefix . 'page_general_banner_text',
+        'name'       => esc_html__( 'Texto del Banner', 'xsl' ),
+        'desc'       => esc_html__( 'ingrese un texto descriptivo de este Banner Principal', 'xsl' ),
+        'type'    => 'wysiwyg',
+        'options' => array(
+            'textarea_rows' => get_option('default_post_edit_rows', 4),
+            'teeny' => false
+        )
+    ) );
+
+    /* HOME */
+    require_once('custom-metaboxes-home.php');
+
+
 }
