@@ -199,6 +199,15 @@ if ( function_exists('add_theme_support') ) {
 }
 if ( function_exists('add_image_size') ) {
     add_image_size('avatar', 100, 100, true);
-    add_image_size('blog_img', 276, 217, true);
-    add_image_size('single_img', 636, 297, true );
+    add_image_size('banner_img', 1300, 600, array('center', 'center'));
+    add_image_size('benefits_icon', 170, 170, true);
+    add_image_size('sections_mini', 255, 255, array('center', 'center'));
+    add_image_size('sections_medium', 9999, 550, array('center', 'center'));
 }
+
+
+
+function mytheme_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );

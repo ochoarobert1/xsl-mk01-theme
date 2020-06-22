@@ -92,6 +92,7 @@
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="<?php echo $network_url; ?>"><?php _e('Español', 'xsl'); ?></a>
                                     <a class="dropdown-item" href="<?php echo $network_url . '/en'; ?>"><?php _e('Ingles', 'xsl'); ?></a>
+                                    <a class="dropdown-item" href="<?php echo $network_url . '/de'; ?>"><?php _e('Aleman', 'xsl'); ?></a>
                                 </div>
                             </div>
                             <?php echo get_search_form(); ?>

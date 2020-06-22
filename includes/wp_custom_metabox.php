@@ -102,5 +102,13 @@ function xsl_register_custom_metabox() {
     /* HOME */
     require_once('custom-metaboxes-home.php');
 
+    /* ABOUT */
+    require_once('custom-metaboxes-about.php');
+
+    /* SERVICES */
+    require_once('custom-metaboxes-services.php');
+
+    /* CONTACT US */
+    require_once('custom-metaboxes-contact.php');
 
 }
