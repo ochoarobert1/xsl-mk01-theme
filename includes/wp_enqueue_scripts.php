@@ -13,8 +13,8 @@ function xsl_load_js() {
             wp_enqueue_script('bootstrap-bundle');
 
             /*- BOOTSTRAP ON LOCAL  -*/
-            wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '4.4.1', true);
-            wp_enqueue_script('bootstrap');
+//            wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '4.4.1', true);
+//            wp_enqueue_script('bootstrap');
 
             /*- JQUERY STICKY ON LOCAL  -*/
             //wp_register_script('sticky', get_template_directory_uri() . '/js/jquery.sticky.js', array('jquery'), '1.0.4', true);
@@ -61,8 +61,8 @@ function xsl_load_js() {
             //wp_enqueue_script('wow-js');
 
             /*- AOS ON LOCAL -*/
-            //wp_register_script('aos-js', get_template_directory_uri() . '/js/aos.js', array('jquery'), '3.0.0', true);
-            //wp_enqueue_script('aos-js');
+            wp_register_script('aos-js', get_template_directory_uri() . '/js/aos.js', array('jquery'), '3.0.0', true);
+            wp_enqueue_script('aos-js');
 
         } else {
 
@@ -123,13 +123,17 @@ function xsl_load_js() {
             //wp_enqueue_script('wow-js');
 
             /*- AOS -*/
-            //wp_register_script('aos-js', 'https://unpkg.com/aos@next/dist/aos.js', array('jquery'), '3.0.0', true);
-            //wp_enqueue_script('aos-js');
+            wp_register_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array('jquery'), '3.0.0', true);
+            wp_enqueue_script('aos-js');
 
         }
 
+        /*- SWIPER.JS -*/
+        wp_register_script('swiper-js', 'https://unpkg.com/swiper/js/swiper.min.js', array('jquery'), '3.0.0', true);
+        wp_enqueue_script('swiper-js');
+
         /*- MAIN FUNCTIONS -*/
-        wp_register_script('main-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), $version_remove, true);
+        wp_register_script('main-functions', get_template_directory_uri() . '/js/functions.js', array('jquery', 'aos-js'), $version_remove, true);
         wp_enqueue_script('main-functions');
 
         if ( is_single('post') && comments_open() && get_option( 'thread_comments' ) ) {

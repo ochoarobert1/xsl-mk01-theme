@@ -201,6 +201,9 @@ if ( function_exists('add_image_size') ) {
     add_image_size('avatar', 100, 100, true);
     add_image_size('banner_img', 1300, 600, array('center', 'center'));
     add_image_size('benefits_icon', 170, 170, true);
+    add_image_size('tax_local_img', 800, 400, array('center', 'center'));
+    add_image_size('tax_children_small_img', 540, 270, array('center', 'center'));
+    add_image_size('tax_children_large_img', 1110, 270, array('center', 'center'));
     add_image_size('sections_mini', 255, 255, array('center', 'center'));
     add_image_size('sections_medium', 9999, 550, array('center', 'center'));
 }

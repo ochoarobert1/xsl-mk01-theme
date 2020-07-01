@@ -26,6 +26,15 @@
                 <div class="row">
                     <div class="about-projects-container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <h2><?php _e('Proyectos', 'xsl'); ?></h2>
+                        <div class="about-projects-logos-content">
+                            <?php $about_logos = get_post_meta(get_the_ID(), 'xsl_about_projects_logos', true); ?>
+                            <?php if ((!empty($about_logos)) || ($about_logos != '')) { ?>
+                            <?php foreach ($about_logos as $attachment_id => $attachment_url ) { ?>
+                            <?php $image = wp_get_attachment_image_src($attachment_id, 'benefits_icon' ); ?>
+                            <img src="<?php echo $image[0]; ?>" alt="<?php _e('Logo', 'maxicon'); ?>" class="img-fluid" data-aos="fade-in" data-aos-delay="150" width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>" />
+                            <?php } ?>
+                            <?php } ?>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -39,7 +48,8 @@
                         <div class="about-section-text-wrapper">
                             <?php echo $section_item['description']; ?>
                         </div>
-                        <a href="<?php echo $section_item['link_url']; ?>" title="<?php echo $section_item['link_text']; ?>" class="btn btn-md btn-sections-text"><?php echo $section_item['link_text']; ?></a>
+                        <?php if ($section_item['target'] == 'on') { $target = 'target="_blank"'; } else { $target = ''; }?>
+                        <a href="<?php echo $section_item['link_url']; ?>" <?php echo $target; ?> title="<?php echo $section_item['link_text']; ?>" class="btn btn-md btn-sections-text"><?php echo $section_item['link_text']; ?></a>
                     </article>
                     <?php } ?>
                 </div>

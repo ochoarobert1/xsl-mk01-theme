@@ -60,6 +60,13 @@ $cmb_home_benefits->add_group_field( $group_field_id, array(
     )
 ) );
 
+$cmb_home_benefits->add_group_field( $group_field_id, array(
+    'id'   => 'link_url',
+    'name'      => esc_html__( 'Link URL del Item', 'xsl' ),
+    'desc'      => esc_html__( 'Ingrese el link a donde debe llevar el Item', 'xsl' ),
+    'type'    => 'text_url',
+) );
+
 /* SECTIONS MENU GROUP */
 $cmb_home_sections = new_cmb2_box( array(
     'id'            => $prefix . 'home_sections_metabox',

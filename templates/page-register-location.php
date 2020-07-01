@@ -18,35 +18,37 @@
                     <div class="register-form-control registry-full-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <h3><?php _e('Tipo de Propiedad', 'xsl'); ?></h3>
                         <div class="row">
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
-                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Apartamento', 'xsl'); ?></label>
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
+                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Vivienda Familiar', 'xsl'); ?></label>
                             </div>
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
-                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Finca', 'xsl'); ?></label>
-                            </div>
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
-                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Ocio y Restauación', 'xsl'); ?></label>
-                            </div>
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
-                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Multiespacio', 'xsl'); ?></label>
-                            </div>
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
-                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Nave industrial', 'xsl'); ?></label>
-                            </div>
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
-                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Oficina', 'xsl'); ?></label>
-                            </div>
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
                                 <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Palacio', 'xsl'); ?></label>
                             </div>
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
-                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Vivienda unifamiliar', 'xsl'); ?></label>
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
+                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Villa', 'xsl'); ?></label>
                             </div>
-                            <div class="property-type col-xl col-lg col-md col-sm-12 col-12">
-                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Otros', 'xsl'); ?></label>
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
+                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Finca', 'xsl'); ?></label>
+                            </div>
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
+                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Oficina', 'xsl'); ?></label>
+                            </div>
+
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
+                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Multiespacio', 'xsl'); ?></label>
+                            </div>
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
+                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Ocio y Restauación', 'xsl'); ?></label>
+                            </div>
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
+                                <label for="property_type[]"><input type="checkbox" name="property_type[]" /> <?php _e('Espacio Abierto', 'xsl'); ?></label>
+                            </div>
+                            <div class="property-type col-xl col-lg col-md-4 col-sm-4 col-4">
+                                <label for="property_type[]"><input type="checkbox" name="property_type[]" value="otros" /> <?php _e('Otros', 'xsl'); ?></label>
                             </div>
                         </div>
                     </div>
+
                     <div class="register-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <h3><?php _e('Dirección', 'xsl'); ?> <span>*</span></h3>
                         <input type="text" name="direccion" class="form-control" />
@@ -87,9 +89,15 @@
                         </div>
                         <div class="register-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <h5><?php _e('Alquilas tu propiedad para:', 'xsl'); ?> <span>*</span></h5>
-                            <label for="purpose[]"><input type="checkbox" name="purpose[]"> Publicidad, Cine y TV</label>
-                            <label for="purpose[]"><input type="checkbox" name="purpose[]"> Sesiones fotográficas</label>
-                            <label for="purpose[]"><input type="checkbox" name="purpose[]"> Eventos corporativos y privados</label>
+                            <label for="purpose"><input type="checkbox" name="purpose"> Publicidad, Cine y TV</label>
+                            <label for="purpose"><input type="checkbox" name="purpose"> Sesiones fotográficas</label>
+                            <label for="purpose"><input type="checkbox" name="purpose"> Eventos corporativos y privados</label>
+                            <label for="purpose"><input id="RegistryOthers" type="checkbox" name="purpose" value="otros"> Otros</label>
+                        </div>
+                        <div id="RegistryOthersDetail" class="register-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-none">
+                            <h3><?php _e('Otros:', 'xsl'); ?> <span>*</span></h3>
+                            <input type="text" name="purposeDesc" class="form-control" />
+                            <small class="d-none error"></small>
                         </div>
                         <div class="register-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <h4><?php _e('Dimensiones', 'xsl'); ?></h4>
