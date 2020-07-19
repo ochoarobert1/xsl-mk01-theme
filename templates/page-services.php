@@ -26,7 +26,7 @@
                 <div class="row justify-content-center align-items-center">
                     <?php $group_service = get_post_meta(get_the_ID(), 'xsl_services_item_group', true); ?>
                     <?php foreach ($group_service as $service_item) { ?>
-                    <article class="service-item col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+                    <article class="service-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                         <picture class="service-item-image">
                             <?php $bg_banner = wp_get_attachment_image_src($service_item['icon_id'], 'benefits_icon', false); ?>
                             <img itemprop="logo" content="<?php echo $bg_banner[0];?>" src="<?php echo $bg_banner[0];?>" title="<?php echo get_post_meta( $service_item['icon_id'], '_wp_attachment_image_alt', true ); ?>" alt="<?php echo get_post_meta($service_item['icon_id'], '_wp_attachment_image_alt', true ); ?>" class="img-fluid" width="<?php echo $bg_banner[1]; ?>" height="<?php echo $bg_banner[2]; ?>" />

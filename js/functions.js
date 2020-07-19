@@ -8,13 +8,14 @@ function documentCustomLoad() {
     "use strict";
     var mobileBtn = document.getElementById("mobileBtn"),
         closeMenuBtn = document.getElementById("closeMenu");
-    mobileBtn.addEventListener("click", openMenu, false);
-    closeMenuBtn.addEventListener("click", openMenu, false);
+    if (mobileBtn) {
+        mobileBtn.addEventListener("click", openMenu, false);
+        closeMenuBtn.addEventListener("click", openMenu, false);
+    }
+
     var checkbox = document.getElementById('RegistryOthers');
-
     var checkboxDetails = document.getElementById('RegistryOthersDetail');
-
-    if(checkbox){
+    if (checkbox) {
         checkbox.addEventListener('change', function () {
             if (this.checked) {
                 if (checkboxDetails.classList.contains('d-none')) {
@@ -50,51 +51,28 @@ function documentCustomLoad() {
 
     });
 
-    /*
-    var mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        speed: 500,
-        spaceBetween: 40,
-        slidesPerView: 3,
-        centeredSlides: true,
+
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 80,
+        slidesPerView: 4,
         loop: true,
-        autoplay: {
-            delay: 5000,
-        },
-        // Navigation arrows
+        freeMode: true,
+        loopedSlides: 5, //looped slides should be the same
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 0,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        breakpoints: {
-            // when window width is >= 320px
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-
-            },
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-
-            },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-
-
-            },
-            800: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-
-            }
-        }
+        thumbs: {
+            swiper: galleryThumbs,
+        },
     });
-    */
 
 }
 

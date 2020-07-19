@@ -111,4 +111,33 @@ function xsl_register_custom_metabox() {
     /* CONTACT US */
     require_once('custom-metaboxes-contact.php');
 
+
+    /* LOCALIZACIONES */
+    $cmb_local_gallery = new_cmb2_box( array(
+        'id'            => $prefix . 'local_metabox',
+        'title'         => esc_html__( 'Localizaciones: Galería', 'xsl' ),
+        'object_types'  => array( 'localizaciones' ), // Post type
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'show_names' => true, // Show field names on the left
+        'closed'     => false, // true to keep the metabox closed by default
+    ) );
+
+    $cmb_local_gallery->add_field( array(
+        'id'   => $prefix . 'local_gallery',
+        'name' => esc_html__('Garleía', 'maxicon'),
+        'desc' => esc_html__('Cargue o seleccione las imágenes para incluirlas en la Galerpia de la Localización', 'maxicon'),
+        'type' => 'file_list',
+        'query_args' => array( 'type' => 'image' ),
+        'text' => array(
+            'add_upload_files_text' => esc_html__( 'Upload Logo', 'maxicon' ),
+            'remove_image_text' => esc_html__( 'Remove Logo', 'maxicon' ),
+            'file_text' => esc_html__( 'Logo', 'maxicon' ),
+            'file_download_text' => esc_html__( 'Download', 'maxicon' ),
+            'remove_text' => esc_html__( 'Remove', 'maxicon' ),
+        ),
+        'preview_size' => array( 100, 100 )
+    ) );
+
+
 }

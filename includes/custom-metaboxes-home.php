@@ -6,7 +6,7 @@ $cmb_home_benefits = new_cmb2_box( array(
     'id'            => $prefix . 'home_benefits_metabox',
     'title'         => esc_html__( 'Home: Sección de Beneficios', 'xsl' ),
     'object_types'  => array( 'page' ), // Post type
-    'show_on'       => array( 'key' => 'front-page', 'value' => '' ),
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'templates/page-home.php' ),
     'context'    => 'normal',
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left
@@ -72,7 +72,7 @@ $cmb_home_sections = new_cmb2_box( array(
     'id'            => $prefix . 'home_sections_metabox',
     'title'         => esc_html__( 'Home: Secciones Con Imágenes', 'xsl' ),
     'object_types'  => array( 'page' ), // Post type
-    'show_on'       => array( 'key' => 'front-page', 'value' => '' ),
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'templates/page-home.php' ),
     'context'    => 'normal',
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left
@@ -142,7 +142,7 @@ $cmb_home_text_sections = new_cmb2_box( array(
     'id'            => $prefix . 'home_text_sections_metabox',
     'title'         => esc_html__( 'Home: Secciones Solo Texto', 'xsl' ),
     'object_types'  => array( 'page' ), // Post type
-    'show_on'       => array( 'key' => 'front-page', 'value' => '' ),
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'templates/page-home.php' ),
     'context'    => 'normal',
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left
@@ -190,7 +190,7 @@ $cmb_home_big_sections = new_cmb2_box( array(
     'id'            => $prefix . 'home_big_sections_metabox',
     'title'         => esc_html__( 'Home: Sección Mas Grande Con Imágenes', 'xsl' ),
     'object_types'  => array( 'page' ), // Post type
-    'show_on'       => array( 'key' => 'front-page', 'value' => '' ),
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'templates/page-home.php' ),
     'context'    => 'normal',
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left
@@ -239,7 +239,7 @@ $cmb_home_contact = new_cmb2_box( array(
     'id'            => $prefix . 'home_contact',
     'title'         => esc_html__( 'Home: Sección Contacto', 'xsl' ),
     'object_types'  => array( 'page' ), // Post type
-    'show_on'       => array( 'key' => 'front-page', 'value' => '' ),
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'templates/page-home.php' ),
     'context'    => 'normal',
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left

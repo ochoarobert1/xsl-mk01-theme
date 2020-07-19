@@ -52,25 +52,25 @@
                             </div>
                             <?php } ?>
 
-                            <?php if ($social_options['facebook'] != '') { ?>
+                            <?php if ((isset($social_options['facebook'])) && ($social_options['facebook'] != '')) { ?>
                             <div class="contact-item col-xl col-lg col-md-6 col-sm-12 col-12">
                                 <div class="icon-container"><i class="fa fa-facebook"></i></div> <a href="<?php echo $social_options['facebook']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"> The Exclusive Shooting Location</a>
                             </div>
                             <?php } ?>
 
-                            <?php if ($social_options['twitter'] != '') { ?>
+                            <?php if ((isset($social_options['twitter'])) && ($social_options['twitter'] != '')) { ?>
                             <div class="contact-item col-xl col-lg col-md-6 col-sm-12 col-12">
                                 <div class="icon-container"><i class="fa fa-twitter"></i></div> <a href="<?php echo $social_options['twitter']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"> The Exclusive Shooting Location</a>
                             </div>
                             <?php } ?>
 
-                            <?php if ($social_options['instagram'] != '') { ?>
+                            <?php if ((isset($social_options['instagram'])) && ($social_options['instagram'] != '')) { ?>
                             <div class="contact-item col-xl col-lg col-md-6 col-sm-12 col-12">
                                 <div class="icon-container"><i class="fa fa-instagram"></i></div> <a href="<?php echo $social_options['instagram']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"> @theXSL</a>
                             </div>
                             <?php } ?>
 
-                            <?php if ($social_options['youtube'] != '') { ?>
+                            <?php if ((isset($social_options['youtube'])) && ($social_options['youtube'] != '')) { ?>
                             <div class="contact-item col-xl col-lg col-md-6 col-sm-12 col-12">
                                 <div class="icon-container"><i class="fa fa-youtube"></i></div> <a href="<?php echo $social_options['youtube']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"> The Exclusive Shooting Location</a>
                             </div>

@@ -1,15 +1,15 @@
+#, fuzzy
 msgid ""
 msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Extreme Shooting Locations [Mk.01]\n"
-"POT-Creation-Date: 2020-07-18 20:00-0400\n"
-"PO-Revision-Date: 2020-07-18 20:02-0400\n"
+"POT-Creation-Date: 2020-07-17 20:47-0400\n"
+"PO-Revision-Date: 2020-07-17 20:46-0400\n"
 "Last-Translator: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language-Team: Robert Ochoa <ochoa.robert1@gmail.com>\n"
-"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.3.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -24,153 +24,150 @@ msgstr ""
 
 #: 404.php:12
 msgid "Error 404"
-msgstr "Error 404"
+msgstr ""
 
 #: 404.php:14
 msgid "No podemos encontrar la página que buscas. Dirígete nuevamente al"
 msgstr ""
-"Sorry, but we can't seem to find the page you are looking for. Go back to"
 
 #: 404.php:14 archive.php:53 author.php:59 category.php:53 index.php:61
 #: search.php:53 tag.php:53
 msgid "Volver al Inicio"
-msgstr "Back to Home"
+msgstr ""
 
 #: 404.php:14 archive.php:53 author.php:59 category.php:53 index.php:61
 #: search.php:53 tag.php:53
 msgid "inicio"
-msgstr "home"
+msgstr ""
 
 #: archive.php:34 author.php:40 category.php:34 search.php:34 tag.php:34
 msgid "Publicado por:"
-msgstr "Published by:"
+msgstr ""
 
 #: archive.php:37 author.php:43 category.php:37 search.php:37 tag.php:37
 msgid "Leer Más"
-msgstr "Read More"
+msgstr ""
 
 #: archive.php:52 author.php:58 category.php:52 index.php:60 search.php:52
 #: tag.php:52
 msgid "Disculpe, su busqueda no arrojo ningun resultado"
-msgstr "Sorry, your search doesn't threw any result"
+msgstr ""
 
 #: archive.php:53 author.php:59 category.php:53 index.php:61 search.php:53
 #: tag.php:53
 msgid "Dirígete nuevamente al"
-msgstr "Go back to"
+msgstr ""
 
 #: author.php:9
 msgid "Archivo de"
-msgstr "Archive from"
+msgstr ""
 
 #: author.php:12
 msgid "Acerca de"
-msgstr "About"
+msgstr ""
 
 #: functions.php:113
 msgid "Menu Header - Principal"
-msgstr "Menu Header - Main"
+msgstr ""
 
 #: functions.php:123
 msgid "Sidebar Principal"
-msgstr "Sidebar Main"
+msgstr ""
 
 #: functions.php:125
 msgid "Estos widgets seran vistos en las entradas y páginas del sitio"
-msgstr "These widgets will be seen in the entries and pages of the site"
+msgstr ""
 
 #: functions.php:133
 #, php-format
 msgid "Footer Section %d"
-msgstr "Footer Section %d"
+msgstr ""
 
 #: functions.php:135
 msgid "Footer Section"
-msgstr "Footer Section"
+msgstr ""
 
 #: functions.php:168
 msgid "Gracias por crear con "
-msgstr "Thank you for creating with "
+msgstr ""
 
 #: functions.php:170
 msgid "Tema desarrollado por "
-msgstr "Theme Developed By "
+msgstr ""
 
 #: header.php:62 header.php:175 templates/page-contact.php:51
 msgid "Haz clic aquí para dejar tu mensaje en nuestro correo electrónico"
-msgstr "Click here to leave your message in our email"
+msgstr ""
 
 #: header.php:66 header.php:179 templates/page-contact.php:45
 msgid "Haz clic aquí para llamar directamente a nuestro Master"
-msgstr "Click here to call our Master directly"
+msgstr ""
 
 #: header.php:71 header.php:75 header.php:79 header.php:83 header.php:184
-#: header.php:188 header.php:192 header.php:196
-#: includes/wp_custom_functions.php:87 includes/wp_custom_functions.php:91
-#: includes/wp_custom_functions.php:95 includes/wp_custom_functions.php:99
-#: templates/page-contact.php:57 templates/page-contact.php:63
-#: templates/page-contact.php:69 templates/page-contact.php:75
+#: header.php:188 header.php:192 header.php:196 templates/page-contact.php:57
+#: templates/page-contact.php:63 templates/page-contact.php:69
+#: templates/page-contact.php:75
 msgid "Haz clic aquí para visitar nuestro perfil"
-msgstr "Click here to visit our profile"
+msgstr ""
 
 #: header.php:90
 msgid "Idioma"
-msgstr "Language"
+msgstr ""
 
 #: header.php:93
 msgid "Español"
-msgstr "Spanish"
+msgstr ""
 
 #: header.php:94
 msgid "Inglés"
-msgstr "English"
+msgstr ""
 
 #: header.php:95
 msgid "Alemán"
-msgstr "Deutsch"
+msgstr ""
 
 #: includes/class-required-plugins.php:76
 #: includes/class-tgm-plugin-activation.php:334
 msgid "Instalar Plugins Requeridos"
-msgstr "Install Required Plugins"
+msgstr ""
 
 #: includes/class-required-plugins.php:77
 #: includes/class-tgm-plugin-activation.php:335
 msgid "Instalar Plugins"
-msgstr "Install Plugins"
+msgstr ""
 
 #: includes/class-required-plugins.php:78
 #: includes/class-tgm-plugin-activation.php:336
 #, php-format
 msgid "Instalando Plugin: %s"
-msgstr "Installing Plugin: %s"
+msgstr ""
 
 #: includes/class-required-plugins.php:79
 #: includes/class-tgm-plugin-activation.php:337
 #, php-format
 msgid "Actualizando Plugin: %s"
-msgstr "Updating Plugin: %s"
+msgstr ""
 
 #: includes/class-required-plugins.php:80
 #: includes/class-tgm-plugin-activation.php:338
 msgid "Ocurrió un error con el API del plugin."
-msgstr "There's an error with de plugin API."
+msgstr ""
 
 #: includes/class-required-plugins.php:82
 #: includes/class-tgm-plugin-activation.php:340
 #, php-format
 msgid "Este tema requiere el siguiente plugin: %1$s."
 msgid_plural "Este tema requiere los siguientes plugins: %1$s."
-msgstr[0] "This topic requires the following plugin: %1$s."
-msgstr[1] "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-required-plugins.php:87
 #: includes/class-tgm-plugin-activation.php:345
 #, php-format
 msgid "Este tema recomienda el siguiente plugin: %1$s."
 msgid_plural "Este tema recomienda los siguientes plugins: %1$s."
-msgstr[0] "This topic recommends the following plugin: %1$s."
-msgstr[1] "This topic recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-required-plugins.php:92
 #: includes/class-tgm-plugin-activation.php:350
@@ -182,11 +179,7 @@ msgid_plural ""
 "Los siguientes plugins necesitan ser actualizados a su última versión para "
 "asegurar su compatibilidad con este tema: %1$s."
 msgstr[0] ""
-"The following plugin needs to be updated to its latest version to ensure its "
-"compatibility with this topic: %1$s."
 msgstr[1] ""
-"The following plugins need to be updated to their latest version to ensure "
-"their compatibility with this topic: %1$s."
 
 #: includes/class-required-plugins.php:97
 #: includes/class-tgm-plugin-activation.php:355
@@ -194,8 +187,8 @@ msgstr[1] ""
 msgid "Hay una actualización disponible para: %1$s."
 msgid_plural ""
 "Hay actualizaciones disponible para los siguientes plugins: %1$s."
-msgstr[0] "An update is available for: %1$s."
-msgstr[1] "Updates are available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-required-plugins.php:102
 #: includes/class-tgm-plugin-activation.php:360
@@ -203,8 +196,8 @@ msgstr[1] "Updates are available for the following plugins: %1$s."
 msgid "El siguiente plugin requerido esta actualmente desactivado: %1$s."
 msgid_plural ""
 "Los siguientes plugins requeridos estan actualmente desactivados: %1$s."
-msgstr[0] "The next required plugin is currently disabled: %1$s."
-msgstr[1] "The following required plugins are currently disabled: %1$s."
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-required-plugins.php:107
 #: includes/class-tgm-plugin-activation.php:365
@@ -212,50 +205,50 @@ msgstr[1] "The following required plugins are currently disabled: %1$s."
 msgid "Este plugin recomendado esta actualmente desactivado: %1$s."
 msgid_plural ""
 "Los siguientes plugins recomendados estan actualmente desactivados: %1$s."
-msgstr[0] "This recommended plugin is currently disabled: %1$s."
-msgstr[1] "The following recommended plugins are currently disabled: %1$s."
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-required-plugins.php:112
 #: includes/class-tgm-plugin-activation.php:370
 msgid "Iniciar la instalación del plugin"
 msgid_plural "Iniciar la instalación de los plugins"
-msgstr[0] "Start the plugin installation"
-msgstr[1] "Start installing the plugins"
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-required-plugins.php:117
 #: includes/class-tgm-plugin-activation.php:375
 msgid "Iniciar la actualización del plugin"
 msgid_plural "Iniciar la actualización de los plugins"
-msgstr[0] "Start the plugin update"
-msgstr[1] "Start updating the plugins"
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-required-plugins.php:122
 #: includes/class-tgm-plugin-activation.php:380
 msgid "Iniciar la activación del plugin"
 msgid_plural "Iniciar la activación de los plugins"
-msgstr[0] "Start plug-in activation"
-msgstr[1] "Start activating the plugins"
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-required-plugins.php:126
 #: includes/class-tgm-plugin-activation.php:384
 msgid "Volver al Instalador de plugins requeridos"
-msgstr "Back to the Required Plugin Installer"
+msgstr ""
 
 #: includes/class-required-plugins.php:127
 #: includes/class-tgm-plugin-activation.php:385
 msgid "Plugin activado con éxito."
-msgstr "Plugin activated successfully."
+msgstr ""
 
 #: includes/class-required-plugins.php:128
 #: includes/class-tgm-plugin-activation.php:386
 msgid "El siguiente plugin ha sido activado exitosamente:"
-msgstr "The following plugin has been successfully activated:"
+msgstr ""
 
 #: includes/class-required-plugins.php:129
 #: includes/class-tgm-plugin-activation.php:387
 #, php-format
 msgid "No se tomón ninguna acción. El plugin %1$s ya estaba activado."
-msgstr "No action was taken. The %1$s plugin was already enabled."
+msgstr ""
 
 #: includes/class-required-plugins.php:130
 #: includes/class-tgm-plugin-activation.php:388
@@ -264,19 +257,17 @@ msgid ""
 "Plugin no activo. Una versión mas alta de %s es necesaria para este tema. "
 "Por favor, actualiza el plugin."
 msgstr ""
-"Plugin not active. A higher version of %s is required for this topic. Please "
-"update the plugin."
 
 #: includes/class-required-plugins.php:131
 #: includes/class-tgm-plugin-activation.php:389
 #, php-format
 msgid "Todos los plugins han sido instalados y activados exitosamente. %1$s"
-msgstr "All plugins have been successfully installed and activated. %1$s"
+msgstr ""
 
 #: includes/class-required-plugins.php:132
 #: includes/class-tgm-plugin-activation.php:390
 msgid "Ocultar este aviso"
-msgstr "Hide this notice"
+msgstr ""
 
 #: includes/class-required-plugins.php:133
 #: includes/class-tgm-plugin-activation.php:391
@@ -284,37 +275,33 @@ msgid ""
 "Hay uno o más plugins necesarios o recomendados para instalar, actualizar o "
 "activar."
 msgstr ""
-"There are one or more plugins required or recommended to install, update or "
-"activate."
 
 #: includes/class-required-plugins.php:134
 #: includes/class-tgm-plugin-activation.php:392
 msgid "Por favor, contacte con el administrador de este sitio para mas ayuda."
-msgstr "Please contact the administrator of this site for further assistance."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:595
 msgid "Este plugin necesita ser actualizado para ser compatible con este tema."
-msgstr "This plugin needs to be updated to support this theme."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:596
 msgid "Actualización Requerida"
-msgstr "Update Required"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:713
 msgid "Set the parent_slug config variable instead."
-msgstr "Set the parent_slug config variable instead."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:908
 msgid "Volver al Escritorio"
-msgstr "Back to Dashboard"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:1015
 msgid ""
 "The remote plugin package does not contain a folder with the desired slug "
 "and renaming did not work."
 msgstr ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
 
 #: includes/class-tgm-plugin-activation.php:1015
 #: includes/class-tgm-plugin-activation.php:1018
@@ -322,79 +309,75 @@ msgid ""
 "Please contact the plugin provider and ask them to package their plugin "
 "according to the WordPress guidelines."
 msgstr ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
 
 #: includes/class-tgm-plugin-activation.php:1018
 msgid ""
 "The remote plugin package consists of more than one file, but the files are "
 "not packaged in a folder."
 msgstr ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
 
 #: includes/class-tgm-plugin-activation.php:1202
 #: includes/class-tgm-plugin-activation.php:3029
 msgctxt "plugin A *and* plugin B"
 msgid "and"
-msgstr "and"
+msgstr ""
 
 #. translators: %s: version number
 #: includes/class-tgm-plugin-activation.php:2063
 #, php-format
 msgid "TGMPA v%s"
-msgstr "TGMPA v%s"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2354
 msgid "Required"
-msgstr "Required"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2357
 msgid "Recommended"
-msgstr "Recommended"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2373
 msgid "WordPress Repository"
-msgstr "WordPress Repository"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2376
 msgid "External Source"
-msgstr "External Source"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2379
 msgid "Pre-Packaged"
-msgstr "Pre-Packaged"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2396
 msgid "Not Installed"
-msgstr "Not Installed"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2400
 msgid "Installed But Not Activated"
-msgstr "Installed But Not Activated"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2402
 msgid "Active"
-msgstr "Active"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2408
 msgid "Required Update not Available"
-msgstr "Required Update not Available"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2411
 msgid "Requires Update"
-msgstr "Requires Update"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2414
 msgid "Update recommended"
-msgstr "Update recommended"
+msgstr ""
 
 #. translators: 1: install status, 2: update status
 #: includes/class-tgm-plugin-activation.php:2423
 #, php-format
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
-msgstr "%1$s, %2$s"
+msgstr ""
 
 #. translators: 1: number of plugins.
 #: includes/class-tgm-plugin-activation.php:2469
@@ -402,319 +385,315 @@ msgstr "%1$s, %2$s"
 msgctxt "plugins"
 msgid "Todos <span class=\"count\">(%s)</span>"
 msgid_plural "Todos <span class=\"count\">(%s)</span>"
-msgstr[0] "All <span class=\"count\">(%s)</span>"
-msgstr[1] "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
 #. translators: 1: number of plugins.
 #: includes/class-tgm-plugin-activation.php:2473
 #, php-format
 msgid "Por Instalar <span class=\"count\">(%s)</span>"
 msgid_plural "Por Instalar <span class=\"count\">(%s)</span>"
-msgstr[0] "By Install <span class=\"count\">(%s)</span>"
-msgstr[1] "By Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
 #. translators: 1: number of plugins.
 #: includes/class-tgm-plugin-activation.php:2477
 #, php-format
 msgid "Actualización Disponible <span class=\"count\">(%s)</span>"
 msgid_plural "Actualizaciones Disponibles <span class=\"count\">(%s)</span>"
-msgstr[0] "Available Update <span class=\"count\">(%s)</span>"
-msgstr[1] "Available updates <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
 #. translators: 1: number of plugins.
 #: includes/class-tgm-plugin-activation.php:2481
 #, php-format
 msgid "Por Activar <span class=\"count\">(%s)</span>"
 msgid_plural "Por Activar <span class=\"count\">(%s)</span>"
-msgstr[0] "By Activate <span class=\"count\">(%s)</span>"
-msgstr[1] "By Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-tgm-plugin-activation.php:2563
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
-msgstr "unknown"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2571
 msgid "Installed version:"
-msgstr "Installed version:"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2579
 msgid "Minimum required version:"
-msgstr "Minimum required version:"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2591
 msgid "Available version:"
-msgstr "Available version:"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2614
 msgid "No plugins to install, update or activate."
-msgstr "No plugins to install, update or activate."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2614
 #: includes/class-tgm-plugin-activation.php:3661
 msgid "Return to the Dashboard"
-msgstr "Return to the Dashboard"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2628
 msgid "Plugin"
-msgstr "Plugin"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2629
 msgid "Source"
-msgstr "Source"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2630
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2634
 msgid "Version"
-msgstr "Version"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2635
 msgid "Status"
-msgstr "Status"
+msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
 #: includes/class-tgm-plugin-activation.php:2684
 #, php-format
 msgid "Instalar %2$s"
-msgstr "Install %2$s"
+msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
 #: includes/class-tgm-plugin-activation.php:2689
 #, php-format
 msgid "Actualizar %2$s"
-msgstr "Update %2$s"
+msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
 #: includes/class-tgm-plugin-activation.php:2695
 #, php-format
 msgid "Activar %2$s"
-msgstr "Activate %2$s"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2765
 msgid "Upgrade message from the plugin author:"
-msgstr "Upgrade message from the plugin author:"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2798
 msgid "Install"
-msgstr "Install"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2804
 msgid "Update"
-msgstr "Update"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2807
 msgid "Activate"
-msgstr "Activate"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2838
 msgid "No plugins were selected to be installed. No action taken."
-msgstr "No plugins were selected to be installed. No action taken."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2840
 msgid "No plugins were selected to be updated. No action taken."
-msgstr "No plugins were selected to be updated. No action taken."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2881
 msgid "No hay plugins disponibles para ser instalados ahora mismo."
-msgstr "There are no plugins available to be installed right now."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2883
 msgid "No hay plugins disponibles para ser actualizados ahora mismo."
-msgstr "There are no plugins available to be updated right now."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:2989
 msgid "No plugins were selected to be activated. No action taken."
-msgstr "No plugins were selected to be activated. No action taken."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3015
 msgid "No plugins are available to be activated at this time."
-msgstr "No plugins are available to be activated at this time."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3033
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
-msgstr[0] "The following plugin was activated successfully:"
-msgstr[1] "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/class-tgm-plugin-activation.php:3239
 msgid "Plugin activation failed."
-msgstr "Plugin activation failed."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3240
 msgid "Plugin activated successfully."
-msgstr "Plugin activated successfully."
+msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: includes/class-tgm-plugin-activation.php:3579
 #, php-format
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
 
 #. translators: 1: plugin name, 2: error message.
 #: includes/class-tgm-plugin-activation.php:3582
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
 
 #. translators: 1: plugin name.
 #: includes/class-tgm-plugin-activation.php:3584
 #, php-format
 msgid "The installation of %1$s failed."
-msgstr "The installation of %1$s failed."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3588
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
 
 #. translators: 1: plugin name.
 #: includes/class-tgm-plugin-activation.php:3590
 #, php-format
 msgid "%1$s installed and activated successfully."
-msgstr "%1$s installed and activated successfully."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3590
 #: includes/class-tgm-plugin-activation.php:3598
 msgid "Show Details"
-msgstr "Show Details"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3590
 #: includes/class-tgm-plugin-activation.php:3598
 msgid "Hide Details"
-msgstr "Hide Details"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3591
 msgid "All installations and activations have been completed."
-msgstr "All installations and activations have been completed."
+msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: includes/class-tgm-plugin-activation.php:3593
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr "Installing and activating Plugin%1$s (%2$d/%3$d)"
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3596
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
 
 #. translators: 1: plugin name.
 #: includes/class-tgm-plugin-activation.php:3598
 #, php-format
 msgid "%1$s installed successfully."
-msgstr "%1$s installed successfully."
+msgstr ""
 
 #: includes/class-tgm-plugin-activation.php:3599
 msgid "All installations have been completed."
-msgstr "All installations have been completed."
+msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: includes/class-tgm-plugin-activation.php:3601
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr "Installing Plugin%1$s (%2$d/%3$d)"
+msgstr ""
 
 #: includes/class-wp-bootstrap-navwalker.php:365
 msgid "Add a menu"
-msgstr "Add a menu"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:7
 msgid "About: Projectos"
-msgstr "About: Projects"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:18
 msgid "Featured logos"
-msgstr "Featured logos"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:19
 msgid "Select the featured logos for HomePage"
-msgstr "Select the featured logos for HomePage"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:23 includes/wp_custom_metabox.php:133
 msgid "Upload Logo"
-msgstr "Upload Logo"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:24 includes/wp_custom_metabox.php:134
 msgid "Remove Logo"
-msgstr "Remove Logo"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:25 includes/wp_custom_metabox.php:135
 #: templates/page-about.php:34
 msgid "Logo"
-msgstr "Logo"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:26 includes/wp_custom_metabox.php:136
 msgid "Download"
-msgstr "Download"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:27 includes/wp_custom_metabox.php:137
 msgid "Remove"
-msgstr "Remove"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:36
 msgid "About: Secciones Solo Texto"
-msgstr "About: Text Only Sections"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:49
 msgid "Items con solo Texto y Botón - Ubicado justo despues de los Proyectos"
-msgstr "Items with Text and Button only - Located right after Projects"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:51 includes/custom-metaboxes-home.php:88
 #: includes/custom-metaboxes-home.php:158
 msgid "Item {#}"
-msgstr "Item {#}"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:52 includes/custom-metaboxes-home.php:89
 #: includes/custom-metaboxes-home.php:159
 msgid "Agregar otro Item"
-msgstr "Add another Item"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:53 includes/custom-metaboxes-home.php:90
 #: includes/custom-metaboxes-home.php:160
 msgid "Remover Item"
-msgstr "Remove Item"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:56 includes/custom-metaboxes-home.php:93
 #: includes/custom-metaboxes-home.php:163
 msgid "¿Estas seguro de remover este Item?"
-msgstr "Are you sure to remove this Item?"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:62
 #: includes/custom-metaboxes-home.php:169
 msgid "Texto del Item"
-msgstr "Item Text"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:63
 #: includes/custom-metaboxes-home.php:170
 msgid "Ingrese un Texto descriptivo al Item"
-msgstr "Enter a Descriptive Text to the Item"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:69
 #: includes/custom-metaboxes-home.php:176
 msgid "Texto del Boton"
-msgstr "Boton text"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:70
 #: includes/custom-metaboxes-home.php:177
 msgid "Ingrese un Texto alusivo al boton"
-msgstr "Enter a Text alluding to the button"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:76
 msgid "Abrir en nueva pestaña?"
-msgstr "Open in new tab?"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:77
 msgid "Haz click aqui para abrir este link en una pagina nueva"
-msgstr "Click here to open this link on a new page"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:83 includes/custom-metaboxes-home.php:65
 #: includes/custom-metaboxes-home.php:135
@@ -723,7 +702,7 @@ msgstr "Click here to open this link on a new page"
 #: includes/custom-metaboxes-services.php:84
 #: includes/custom-metaboxes-services.php:92
 msgid "Link URL del Item"
-msgstr "Link URL del Item"
+msgstr ""
 
 #: includes/custom-metaboxes-about.php:84 includes/custom-metaboxes-home.php:66
 #: includes/custom-metaboxes-home.php:136
@@ -732,625 +711,529 @@ msgstr "Link URL del Item"
 #: includes/custom-metaboxes-services.php:85
 #: includes/custom-metaboxes-services.php:93
 msgid "Ingrese el link a donde debe llevar el Item"
-msgstr "Enter the link to where you should take the Item"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:7
 msgid "Contacto: Sección de Beneficios"
-msgstr "Contact: Benefits Section"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:18
 msgid "Código Embed del Mapa"
-msgstr "Embed Map Code"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:19
 msgid "Inserte el iframe que generara el Mapa en el sitio"
-msgstr "Insert the iframe that will generate the Map on the site"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:26
 msgid "Contacto: Secciones Con Imágenes"
-msgstr "Contact: Sections With Images"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:37
 #: templates/page-register-location.php:53
 msgid "Dirección"
-msgstr "Address"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:38
 msgid "Ingrese la dirección de la empresa"
-msgstr "Enter the company address"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:45
 msgid "Contacto: Sección Formulario"
-msgstr "Contact: Form Section"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:56
 #: includes/custom-metaboxes-home.php:262
 msgid "Logo para Formulario de contacto"
-msgstr "Contact Form Logo"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:57
 #: includes/custom-metaboxes-home.php:263
 msgid "Carga un Logo para Formulario de contacto"
-msgstr "Upload a Contact Form Logo"
+msgstr ""
 
 #: includes/custom-metaboxes-contact.php:64
 #: includes/custom-metaboxes-home.php:270
 msgid "Cargar Logo"
-msgstr "Load Logo"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:7
 msgid "Home: Sección de Beneficios"
-msgstr "Home: Benefits Section"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:19
 msgid "Beneficios dentro del Home - Ubicado justo despues del banner principal"
-msgstr "Benefits inside the Home - Located just after the main banner"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:21
 msgid "Beneficio {#}"
-msgstr "Beneficio {#}"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:22
 msgid "Agregar otro Beneficio"
-msgstr "Add another Benefit"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:23
 msgid "Remover Beneficio"
-msgstr "Remover Beneficio"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:26
 msgid "¿Estas seguro de remover este Beneficio?"
-msgstr "Are you sure to remove this Benefit?"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:32
 #: includes/custom-metaboxes-services.php:32
 msgid "Ícono del Item"
-msgstr "Item icon"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:33
 #: includes/custom-metaboxes-services.php:33
 msgid "Carga un ícono descriptivo para este Item"
-msgstr "Load a descriptive icon for this Item"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:40
 #: includes/custom-metaboxes-services.php:40
 msgid "Cargar ícono"
-msgstr "Load Icon"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:54
 msgid "Descripción del Item"
-msgstr "Item Description"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:55
 msgid "Ingrese una descripción alusiva al Item"
-msgstr "Enter a description alluding to the Item"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:73
 msgid "Home: Secciones Con Imágenes"
-msgstr "Home: Sections With Pictures"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:86
 msgid ""
 "imágenes con Link dentro dentro de la Sección - Ubicado justo despues de los "
 "Beneficios"
-msgstr "images with Link inside the Section - Located right after the Benefits"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:99
 msgid "Item mas Grande"
-msgstr "Item Bigger"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:100
 msgid "Activar si este item debe ser mas grande en esta sección"
-msgstr "Activate if this item should be larger in this section"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:106
 #: includes/custom-metaboxes-home.php:203
 msgid "Imágen de Fondo del Item"
-msgstr "Item Background Image"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:107
 #: includes/custom-metaboxes-home.php:204
 msgid "Carga un Imágen de Fondo descriptivo para este Item"
-msgstr "Upload a Descriptive Background Image for this Item"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:114
 #: includes/custom-metaboxes-home.php:211
 msgid "Cargar Fondo"
-msgstr "Load Background"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:128
 #: includes/custom-metaboxes-home.php:225
 #: includes/custom-metaboxes-services.php:73
 msgid "Título del Item"
-msgstr "Item Title"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:129
 #: includes/custom-metaboxes-home.php:226
 #: includes/custom-metaboxes-services.php:74
 msgid "Ingrese un título alusivo al Item"
-msgstr "Enter a title alluding to the Item"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:143
 msgid "Home: Secciones Solo Texto"
-msgstr "Home: Text Only Sections"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:156
 msgid "Items con solo Texto y Botón - Ubicado justo despues de los Beneficios"
-msgstr "Items with Text and Button only - Located right after Benefits"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:191
 msgid "Home: Sección Mas Grande Con Imágenes"
-msgstr "Home: Larger Section With Pictures"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:240
 msgid "Home: Sección Contacto"
-msgstr "Home: Contact Section"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:251
 msgid "Texto anterior al formulario de contacto"
-msgstr "Text before the contact form"
+msgstr ""
 
 #: includes/custom-metaboxes-home.php:252
 msgid ""
 "ingrese un texto descriptivo que estara ubicado justo antes del Formulario"
-msgstr "enter a descriptive text that will be located just before the Form"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:7
 msgid "Servicios: Items"
-msgstr "Services: Items"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:19
 msgid "Servicios de la Empresa"
-msgstr "Company Services"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:21
 msgid "Servicio {#}"
-msgstr "Service"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:22
 msgid "Agregar otro Servicio"
-msgstr "Add another Service"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:23
 msgid "Remover Servicio"
-msgstr "Remove Service"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:26
 msgid "¿Estas seguro de remover este Servicio?"
-msgstr "Are you sure to remove this Service?"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:54
 msgid "Descripción del Servicio"
-msgstr "Service Description"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:55
 msgid "Ingrese una descripción alusiva al Servicio"
-msgstr "Enter a description alluding to the Service"
+msgstr ""
 
 #: includes/custom-metaboxes-services.php:61
 msgid "Servicios: Texto posterior a Items"
-msgstr "Services: Post-Items text"
-
-#: includes/wp_custom_functions.php:66
-msgid "Social Networks Widget"
-msgstr "Social Networks Widget"
-
-#: includes/wp_custom_functions.php:69
-msgid "Social Networks added in customize"
-msgstr "Social Networks added in customize"
-
-#: includes/wp_custom_functions.php:113
-msgid "New title"
-msgstr "New title"
-
-#: includes/wp_custom_functions.php:118
-msgid "Title:"
-msgstr "Title:"
+msgstr ""
 
 #: includes/wp_custom_metabox.php:68
 msgid "Página: Banner General"
-msgstr "Page: Banner General"
+msgstr ""
 
 #: includes/wp_custom_metabox.php:77
 msgid "Imagen del Banner"
-msgstr "Banner Image"
+msgstr ""
 
 #: includes/wp_custom_metabox.php:78
 msgid "Cargue una imagen para el Banner Principal de la pagina"
-msgstr "Upload an image for the Main Banner of the page"
+msgstr ""
 
 #: includes/wp_custom_metabox.php:93
 msgid "Texto del Banner"
-msgstr "Banner Text"
+msgstr ""
 
 #: includes/wp_custom_metabox.php:94
 msgid "ingrese un texto descriptivo de este Banner Principal"
-msgstr "enter a descriptive text of this Main Banner"
+msgstr ""
 
 #: includes/wp_custom_metabox.php:118
 msgid "Localizaciones: Galería"
-msgstr "Locations: Gallery"
+msgstr ""
 
 #: includes/wp_custom_metabox.php:128
 msgid "Garleía"
-msgstr "Garleía"
+msgstr ""
 
 #: includes/wp_custom_metabox.php:129
 msgid ""
 "Cargue o seleccione las imágenes para incluirlas en la Galerpia de la "
 "Localización"
-msgstr "Upload or select the images to include in the Location Gallery"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:7
 msgctxt "Post Type General Name"
 msgid "Localizaciones"
-msgstr "Locations"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:8
 msgctxt "Post Type Singular Name"
 msgid "Localización"
-msgstr "Location"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:9 includes/wp_custom_post_type.php:10
 #: includes/wp_custom_post_type.php:37 taxonomy-categorias-localizacion.php:10
-#: taxonomy-paises.php:10
 msgid "Localizaciones"
-msgstr "Locations"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:11
 msgid "Archivo de Localizaciones"
-msgstr "Location Archive"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:12
 msgid "Atributos de Localización"
-msgstr "Location Attributes"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:13
 msgid "Localización Padre:"
-msgstr "Parent Location:"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:14
 msgid "Todas las Localizaciones"
-msgstr "All Locations"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:15
 msgid "Agregar Nueva Localización"
-msgstr "Add New Location Services"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:16
 msgid "Agregar Nueva"
-msgstr "Add New"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:17
 msgid "Nueva Localización"
-msgstr "New Location"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:18
 msgid "Editar Localización"
-msgstr "Edit Location Services"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:19
 msgid "Actualizar Localización"
-msgstr "Update Location Services"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:20
 msgid "Ver Localización"
-msgstr "View Location"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:21
 msgid "Ver Localizaciones"
-msgstr "See Locations"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:22
 msgid "Buscar Localización"
-msgstr "Search Location"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:23 includes/wp_custom_post_type.php:81
-#: includes/wp_custom_post_type.php:121
 msgid "No hay resultados"
-msgstr "No results"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:24
 msgid "No hay resultados en Papelera"
-msgstr "No results in Trash"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:25
 msgid "Imagen de Localización"
-msgstr "Location Image"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:26
 msgid "Colocar Imagen de Localización"
-msgstr "Place Location Image"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:27
 msgid "Remover Imagen de Localización"
-msgstr "Remove Location Image"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:28
 msgid "Usar como Imagen de Localización"
-msgstr "Use as Location Image"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:29
 msgid "Insertar en Localización"
-msgstr "Insert in Location Services"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:30
 msgid "Cargado a esta Localización"
-msgstr "Loaded to This Location"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:31
 msgid "Listado de Localizaciones"
-msgstr "List of Locations"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:32
 msgid "Navegación del Listado de Localizaciones"
-msgstr "Location List Navigation"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:33
 msgid "Filtro del Listado de Localizaciones"
-msgstr "Location List Filter"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:36
 msgid "Localización"
-msgstr "Location"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:65
 msgctxt "Taxonomy General Name"
-msgid "Paises"
-msgstr "Countries"
+msgid "Categorias"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:66
 msgctxt "Taxonomy Singular Name"
-msgid "País"
-msgstr "Country"
+msgid "Categoría"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:67
-msgid "Paises"
-msgstr "Countries"
+msgid "Categorias"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:68
-msgid "Todos los Paises"
-msgstr "All Countries"
+msgid "Todas las Categorias"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:69
-msgid "País Padre"
-msgstr "Parent Country"
+msgid "Categoría Padre"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:70
-msgid "País Padre:"
-msgstr "Parent Country:"
+msgid "Categoría Padre:"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:71
-msgid "Nuevo País"
-msgstr "New Country"
+msgid "Nueva Categoría"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:72
-msgid "Agregar Nuevo País"
-msgstr "Add New Country"
+msgid "Agregar Nueva Categoría"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:73
-msgid "Editar País"
-msgstr "Edit Country"
+msgid "Editar Categoría"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:74
-msgid "Actualizar País"
-msgstr "Update Country"
+msgid "Actualizar Categoría"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:75
-msgid "Ver País"
-msgstr "View Country"
+msgid "Ver Categoría"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:76
-msgid "Separar paises por comas"
-msgstr "Separate countries by commas"
+msgid "Separar Categorías por comas"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:77
-msgid "Agregar o remover paises"
-msgstr "Adding or removing countries"
+msgid "Agregar o Remover Categorías"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:78
-msgid "Escoger de los mas usados"
-msgstr "Choose from the most used"
+msgid "Escoger de las más usadas"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:79
-msgid "Paises Populares"
-msgstr "Popular Countries"
+msgid "Categorías Populares"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:80
-msgid "Buscar Paises"
-msgstr "Search Countries"
+msgid "Buscar Categoría"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:82
-msgid "No hay paises"
-msgstr "There are no countries"
+msgid "No hay categorias"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:83
-msgid "Listado de Paises"
-msgstr "List of Countries"
+msgid "Listado de Categorias"
+msgstr ""
 
 #: includes/wp_custom_post_type.php:84
-msgid "Navegación del Listado de Paises"
-msgstr "Country List Navigation"
-
-#: includes/wp_custom_post_type.php:105
-msgctxt "Taxonomy General Name"
-msgid "Categorias"
-msgstr "Categories"
-
-#: includes/wp_custom_post_type.php:106
-msgctxt "Taxonomy Singular Name"
-msgid "Categoría"
-msgstr "Category"
-
-#: includes/wp_custom_post_type.php:107
-msgid "Categorias"
-msgstr "Categories"
-
-#: includes/wp_custom_post_type.php:108
-msgid "Todas las Categorias"
-msgstr "All Categories"
-
-#: includes/wp_custom_post_type.php:109
-msgid "Categoría Padre"
-msgstr "Parent Category"
-
-#: includes/wp_custom_post_type.php:110
-msgid "Categoría Padre:"
-msgstr "Parent Category:"
-
-#: includes/wp_custom_post_type.php:111
-msgid "Nueva Categoría"
-msgstr "New Category"
-
-#: includes/wp_custom_post_type.php:112
-msgid "Agregar Nueva Categoría"
-msgstr "Add New Category"
-
-#: includes/wp_custom_post_type.php:113
-msgid "Editar Categoría"
-msgstr "Edit Category"
-
-#: includes/wp_custom_post_type.php:114
-msgid "Actualizar Categoría"
-msgstr "Update Category"
-
-#: includes/wp_custom_post_type.php:115
-msgid "Ver Categoría"
-msgstr "View Category"
-
-#: includes/wp_custom_post_type.php:116
-msgid "Separar Categorías por comas"
-msgstr "Separate Categories by commas"
-
-#: includes/wp_custom_post_type.php:117
-msgid "Agregar o Remover Categorías"
-msgstr "Add or Remove Categories"
-
-#: includes/wp_custom_post_type.php:118
-msgid "Escoger de las más usadas"
-msgstr "Choosing from the most used"
-
-#: includes/wp_custom_post_type.php:119
-msgid "Categorías Populares"
-msgstr "Popular Categories"
-
-#: includes/wp_custom_post_type.php:120
-msgid "Buscar Categoría"
-msgstr "Search Category"
-
-#: includes/wp_custom_post_type.php:122
-msgid "No hay categorias"
-msgstr "There are no categories"
-
-#: includes/wp_custom_post_type.php:123
-msgid "Listado de Categorias"
-msgstr "List of Categories"
-
-#: includes/wp_custom_post_type.php:124
 msgid "Navegación del Listado de Categorias"
-msgstr "Navigation of the List of Categories"
+msgstr ""
 
-#: includes/wp_custom_post_type.php:175 includes/wp_custom_post_type.php:202
+#: includes/wp_custom_post_type.php:135 includes/wp_custom_post_type.php:162
 msgid "Image"
-msgstr "Image"
+msgstr ""
 
-#: includes/wp_custom_post_type.php:179 includes/wp_custom_post_type.php:213
+#: includes/wp_custom_post_type.php:139 includes/wp_custom_post_type.php:173
 msgid "Add Image"
-msgstr "Add Image"
+msgstr ""
 
-#: includes/wp_custom_post_type.php:180 includes/wp_custom_post_type.php:214
+#: includes/wp_custom_post_type.php:140 includes/wp_custom_post_type.php:174
 msgid "Remove Image"
-msgstr "Remove Image"
+msgstr ""
 
-#: includes/wp_custom_post_type.php:242
+#: includes/wp_custom_post_type.php:202
 msgid "Insert"
-msgstr "Insert"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:12
 msgid "Cabecera"
-msgstr "Header"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:13
 msgid "Opciones para los elementos de la cabecera"
-msgstr "Options for header elements"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:26
 #: templates/templates-contact-form.php:26
 msgid "Número Telefónico"
-msgstr "Phone number"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:27
 msgid "Agregar número telefonico con formato para el link"
-msgstr "Add formatted phone number for link"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:41
 msgid "Número Telefónico [Visible]"
-msgstr "Telephone Number [Visible]"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:42
 msgid "Agregar número telefónico en un formato visible para el público"
-msgstr "Add phone number in a format visible to the public"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:57
 #: templates/templates-contact-form.php:21
 msgid "Correo Electrónico"
-msgstr "Email"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:58
 msgid "Agregar direccion de Correo Electrónico"
-msgstr "Add Email Address"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:65
 msgid "Redes Sociales"
-msgstr "Social Networks"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:66
 msgid "Agregue aqui las redes sociales de la página, serán usadas globalmente"
-msgstr "Add here the social networks of the page, they will be used globally"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:82
 msgid "Facebook"
-msgstr "Facebook"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:97
 msgid "Twitter"
-msgstr "Twitter"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:112
 msgid "Instagram"
-msgstr "Instagram"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:127
 msgid "LinkedIn"
-msgstr "Linkedin"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:142
 msgid "YouTube"
-msgstr "Youtube"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:157
 msgid "Yelp"
-msgstr "Yelp"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:162
 msgid "Cookies"
-msgstr "Cookies"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:163
 msgid "Opciones de Cookies"
-msgstr "Cookies Options"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:177
 msgid "Cookie consent"
-msgstr "Cookie consent"
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:178
 msgid "Texto del Cookie consent."
-msgstr "Text of the consent cookie."
+msgstr ""
 
 #: includes/wp_custom_theme_control.php:195
 msgid "Link de Cookies"
-msgstr "Link de Cookies"
+msgstr ""
 
 #: post-formats/format-aside.php:11 post-formats/format-audio.php:11
 #: post-formats/format-chat.php:11 post-formats/format-gallery.php:11
@@ -1358,7 +1241,7 @@ msgstr "Link de Cookies"
 #: post-formats/format-quote.php:11 post-formats/format-status.php:11
 #: post-formats/format-video.php:11 post-formats/format.php:11
 msgid "Tags: "
-msgstr "Tags: "
+msgstr ""
 
 #: post-formats/format-aside.php:16 post-formats/format-audio.php:16
 #: post-formats/format-chat.php:16 post-formats/format-gallery.php:16
@@ -1366,136 +1249,134 @@ msgstr "Tags: "
 #: post-formats/format-quote.php:16 post-formats/format-status.php:16
 #: post-formats/format-video.php:16 post-formats/format.php:16
 msgid "Pages:"
-msgstr "Pages:"
+msgstr ""
 
 #: search.php:8
 #, php-format
 msgid "%s Search Results for "
-msgstr "%s Search Results for "
+msgstr ""
 
 #: searchform.php:3
 msgid "Buscar por Términos:"
-msgstr "Search Terms:"
+msgstr ""
 
-#: taxonomy-categorias-localizacion.php:46 taxonomy-paises.php:46
+#: taxonomy-categorias-localizacion.php:46
 msgid "Categorias Relacionadas"
-msgstr "Related Categories"
+msgstr ""
 
 #: templates/page-about.php:28
 msgid "Proyectos"
-msgstr "Projects"
+msgstr ""
 
 #: templates/page-register-location.php:19
 msgid "Tipo de Propiedad"
-msgstr "Property Type"
+msgstr ""
 
 #: templates/page-register-location.php:22
 msgid "Vivienda Familiar"
-msgstr "Family Housing"
+msgstr ""
 
 #: templates/page-register-location.php:25
 msgid "Palacio"
-msgstr "Palace"
+msgstr ""
 
 #: templates/page-register-location.php:28
 msgid "Villa"
-msgstr "Villa"
+msgstr ""
 
 #: templates/page-register-location.php:31
 msgid "Finca"
-msgstr "Land"
+msgstr ""
 
 #: templates/page-register-location.php:34
 msgid "Oficina"
-msgstr "Office"
+msgstr ""
 
 #: templates/page-register-location.php:38
 msgid "Multiespacio"
-msgstr "Multiespacio"
+msgstr ""
 
 #: templates/page-register-location.php:41
 msgid "Ocio y Restauación"
-msgstr "Leisure and Restaution"
+msgstr ""
 
 #: templates/page-register-location.php:44
 msgid "Espacio Abierto"
-msgstr "Open Space"
+msgstr ""
 
 #: templates/page-register-location.php:47
 msgid "Otros"
-msgstr "Others"
+msgstr ""
 
 #: templates/page-register-location.php:59
 #: templates/templates-contact-form.php:11
 msgid "Nombre"
-msgstr "Name"
+msgstr ""
 
 #: templates/page-register-location.php:64
 #: templates/templates-contact-form.php:16
 msgid "Apellido"
-msgstr "Last Name"
+msgstr ""
 
 #: templates/page-register-location.php:69
 msgid "Email"
-msgstr "Email"
+msgstr ""
 
 #: templates/page-register-location.php:74
 msgid "Teléfono"
-msgstr "Phone"
+msgstr ""
 
 #: templates/page-register-location.php:81
 msgid "Provincias"
-msgstr "Provinces"
+msgstr ""
 
 #: templates/page-register-location.php:91
 msgid "Alquilas tu propiedad para:"
-msgstr "You rent your property for:"
+msgstr ""
 
 #: templates/page-register-location.php:98
 msgid "Otros:"
-msgstr "Other:"
+msgstr ""
 
 #: templates/page-register-location.php:103
 msgid "Dimensiones"
-msgstr "Dimensions"
+msgstr ""
 
 #: templates/templates-contact-form.php:31
 msgid "Comentarios"
-msgstr "Comments"
+msgstr ""
 
 #: templates/templates-contact-form.php:41
 msgid "Enviar"
-msgstr "Send Message"
+msgstr ""
 
 #: templates/templates-filter-locations.php:7
 msgid "Pais"
-msgstr "Country"
+msgstr ""
 
-#: templates/templates-filter-locations.php:17
-#: templates/templates-filter-locations.php:35
-#: templates/templates-filter-locations.php:58
+#: templates/templates-filter-locations.php:15
+#: templates/templates-filter-locations.php:33
+#: templates/templates-filter-locations.php:56
 msgid "Todos"
-msgstr "All"
+msgstr ""
 
-#: templates/templates-filter-locations.php:21
+#: templates/templates-filter-locations.php:19
 msgid "Categorías"
-msgstr "Categories"
+msgstr ""
 
-#: templates/templates-filter-locations.php:39
+#: templates/templates-filter-locations.php:37
 msgid "Tipo"
-msgstr "Type"
+msgstr ""
 
 #. Theme Name of the plugin/theme
 msgid "Extreme Shooting Locations [Mk.01]"
-msgstr "Extreme Shooting Locations [Mk.01]"
+msgstr ""
 
 #. Theme URI of the plugin/theme
 msgid ""
 "http://www.robertochoa.com.ve/casos/xsl?"
 "utm_source=theme&utm_medium=link&utm_content=xsl"
 msgstr ""
-"http://www.robertochoa.com.ve/casos/xsl?"
-"utm_source=theme&utm_medium=link&utm_content=xsl"
 
 #. Description of the plugin/theme
 msgid ""
@@ -1504,19 +1385,13 @@ msgid ""
 "su totalidad, pasando por su etapa de Wireframing, rearmado, version "
 "anterior e implementación en hosting externo."
 msgstr ""
-"Theme designed by <a href=\"http://www.robertochoa.com.ve/\">Robert Ochoa</"
-"a> for Extreme Shooting Locations<br />This custom theme was built in its "
-"entirety, going through its phase of Wireframing, rearming, previous version "
-"and implementation in external hosting."
 
 #. Author of the plugin/theme
 msgid "Diseño - Desarrollo: Robert Ochoa (@ochoarobert1)."
-msgstr "Design - Development: Robert Ochoa (@ochoarobert1)."
+msgstr ""
 
 #. Author URI of the plugin/theme
 msgid ""
 "http://www.robertochoa.com.ve/?"
 "utm_source=theme&utm_medium=link&utm_content=xsl"
 msgstr ""
-"http://www.robertochoa.com.ve/?"
-"utm_source=theme&utm_medium=link&utm_content=xsl"

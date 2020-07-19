@@ -65,7 +65,7 @@ function xsl_load_css() {
         }
 
         /*- SWIPER.JS -*/
-        wp_register_style('swiper-css', 'https://unpkg.com/swiper/css/swiper.min.css', false, '3.0.0', 'all');
+        wp_register_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css', false, '3.0.0', 'all');
         wp_enqueue_style('swiper-css');
 
         /*- GOOGLE FONTS -*/

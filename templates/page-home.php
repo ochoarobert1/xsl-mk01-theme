@@ -1,3 +1,12 @@
+<?php
+/**
+* Template Name: Template - Home / Inicio
+*
+* @package xsl
+* @subpackage xsl-mk01-theme
+* @since Mk. 1.0
+*/
+?>
 <?php get_header(); ?>
 <?php the_post(); ?>
 <main class="container-fluid p-0" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">

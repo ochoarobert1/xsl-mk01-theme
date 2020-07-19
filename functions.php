@@ -200,17 +200,28 @@ if ( function_exists('add_theme_support') ) {
 if ( function_exists('add_image_size') ) {
     add_image_size('avatar', 100, 100, true);
     add_image_size('banner_img', 1300, 600, array('center', 'center'));
-    add_image_size('benefits_icon', 170, 170, true);
+    add_image_size('benefits_icon', 105, 105, true);
     add_image_size('tax_local_img', 800, 400, array('center', 'center'));
     add_image_size('tax_children_small_img', 540, 270, array('center', 'center'));
     add_image_size('tax_children_large_img', 1110, 270, array('center', 'center'));
     add_image_size('sections_mini', 255, 255, array('center', 'center'));
     add_image_size('sections_medium', 9999, 550, array('center', 'center'));
+    add_image_size('gallery_small', 240, 180, array('center', 'center'));
+    add_image_size('gallery_big', 900, 850, array('center', 'center'));
 }
-
-
 
 function mytheme_custom_excerpt_length( $length ) {
     return 30;
 }
 add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+    global $post;
+    if ( isset( $post ) ) {
+        $classes[] = $post->post_type . '-' . $post->post_name;
+    }
+    return $classes;
+}
+
+add_filter( 'body_class', 'add_slug_body_class' );

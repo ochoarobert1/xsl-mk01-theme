@@ -37,7 +37,7 @@ function xsl_custom_post_type() {
         'description'           => __( 'Localizaciones', 'xsl' ),
         'labels'                => $labels,
         'supports'              => array( 'title', 'editor', 'thumbnail' ),
-        'taxonomies'            => array( 'categorias-localizacion' ),
+        'taxonomies'            => array( 'categorias-localizacion', 'paises' ),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,
@@ -57,6 +57,46 @@ function xsl_custom_post_type() {
 
 }
 add_action( 'init', 'xsl_custom_post_type', 0 );
+
+// Register Custom Taxonomy
+function paises() {
+
+    $labels = array(
+        'name'                       => _x( 'Paises', 'Taxonomy General Name', 'xsl' ),
+        'singular_name'              => _x( 'País', 'Taxonomy Singular Name', 'xsl' ),
+        'menu_name'                  => __( 'Paises', 'xsl' ),
+        'all_items'                  => __( 'Todos los Paises', 'xsl' ),
+        'parent_item'                => __( 'País Padre', 'xsl' ),
+        'parent_item_colon'          => __( 'País Padre:', 'xsl' ),
+        'new_item_name'              => __( 'Nuevo País', 'xsl' ),
+        'add_new_item'               => __( 'Agregar Nuevo País', 'xsl' ),
+        'edit_item'                  => __( 'Editar País', 'xsl' ),
+        'update_item'                => __( 'Actualizar País', 'xsl' ),
+        'view_item'                  => __( 'Ver País', 'xsl' ),
+        'separate_items_with_commas' => __( 'Separar paises por comas', 'xsl' ),
+        'add_or_remove_items'        => __( 'Agregar o remover paises', 'xsl' ),
+        'choose_from_most_used'      => __( 'Escoger de los mas usados', 'xsl' ),
+        'popular_items'              => __( 'Paises Populares', 'xsl' ),
+        'search_items'               => __( 'Buscar Paises', 'xsl' ),
+        'not_found'                  => __( 'No hay resultados', 'xsl' ),
+        'no_terms'                   => __( 'No hay paises', 'xsl' ),
+        'items_list'                 => __( 'Listado de Paises', 'xsl' ),
+        'items_list_navigation'      => __( 'Navegación del Listado de Paises', 'xsl' ),
+    );
+    $args = array(
+        'labels'                     => $labels,
+        'hierarchical'               => true,
+        'public'                     => true,
+        'show_ui'                    => true,
+        'show_admin_column'          => true,
+        'show_in_nav_menus'          => true,
+        'show_tagcloud'              => true,
+        'show_in_rest'               => true,
+    );
+    register_taxonomy( 'paises', array( 'localizaciones' ), $args );
+
+}
+add_action( 'init', 'paises', 0 );
 
 // Register Custom Taxonomy
 function xsl_custom_taxonomy() {

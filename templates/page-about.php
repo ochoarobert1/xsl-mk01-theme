@@ -48,7 +48,7 @@
                         <div class="about-section-text-wrapper">
                             <?php echo $section_item['description']; ?>
                         </div>
-                        <?php if ($section_item['target'] == 'on') { $target = 'target="_blank"'; } else { $target = ''; }?>
+                        <?php if ((isset($section_item['target'])) && ($section_item['target'] == 'on')) { $target = 'target="_blank"'; } else { $target = ''; }?>
                         <a href="<?php echo $section_item['link_url']; ?>" <?php echo $target; ?> title="<?php echo $section_item['link_text']; ?>" class="btn btn-md btn-sections-text"><?php echo $section_item['link_text']; ?></a>
                     </article>
                     <?php } ?>
