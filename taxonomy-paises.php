@@ -50,7 +50,7 @@
                     <?php if (!empty($array_taxonomies)) : ?>
                     <?php $i = 1; ?>
                     <?php foreach ($array_taxonomies as $taxes) { ?>
-                    <?php if ($i < 4) { $class = 'col-6'; $size = 'tax_children_small_img'; } else { $class = 'col-12'; $size = 'tax_children_large_img'; } ?>
+                    <?php if ($i < 4) { $class = 'col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12'; $size = 'tax_children_small_img'; } else { $class = 'col-12'; $size = 'tax_children_large_img'; } ?>
                     <div class="local-children-tax-item <?php echo $class; ?>">
                         <div class="local-children-tax-item-wrapper">
                             <?php $tax_bg_id = get_term_meta( $taxes->term_id, 'showcase-taxonomy-image-id', true); ?>

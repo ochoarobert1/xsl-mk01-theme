@@ -125,19 +125,38 @@ function xsl_register_custom_metabox() {
 
     $cmb_local_gallery->add_field( array(
         'id'   => $prefix . 'local_gallery',
-        'name' => esc_html__('Garleía', 'maxicon'),
-        'desc' => esc_html__('Cargue o seleccione las imágenes para incluirlas en la Galerpia de la Localización', 'maxicon'),
+        'name' => esc_html__('Galería', 'xsl'),
+        'desc' => esc_html__('Cargue o seleccione las imágenes para incluirlas en la Galería de la Localización', 'xsl'),
         'type' => 'file_list',
         'query_args' => array( 'type' => 'image' ),
         'text' => array(
-            'add_upload_files_text' => esc_html__( 'Upload Logo', 'maxicon' ),
-            'remove_image_text' => esc_html__( 'Remove Logo', 'maxicon' ),
-            'file_text' => esc_html__( 'Logo', 'maxicon' ),
-            'file_download_text' => esc_html__( 'Download', 'maxicon' ),
-            'remove_text' => esc_html__( 'Remove', 'maxicon' ),
+            'add_upload_files_text' => esc_html__( 'Cargar Imágenes', 'xsl' ),
+            'remove_image_text' => esc_html__( 'Remove Imágenes', 'xsl' ),
+            'file_text' => esc_html__( 'Imagen', 'xsl' ),
+            'file_download_text' => esc_html__( 'Descargar', 'xsl' ),
+            'remove_text' => esc_html__( 'Remover', 'xsl' ),
         ),
         'preview_size' => array( 100, 100 )
     ) );
 
+}
 
+
+function custom_woocommerce_addons_image_gallery() {
+    ob_start();
+    $gallery = get_post_meta(get_the_ID(), 'hinb_addons_gallery', true);
+    if (!empty($gallery)) {
+?>
+<div class="custom-woocommerce-gallery-addons-container">
+    <?php foreach ($gallery as $key => $data) { ?>
+    <?php $image = wp_get_attachment_image_src($key, 'medium', false); ?>
+    <div class="gallery-addon-item">
+        <img width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>" src="<?php echo $image[0]; ?>" alt="Addon" class="img-addon-custom" />
+    </div>
+    <?php } ?>
+</div>
+<?php
+                          }
+    $content = ob_end_clean();
+    echo $content;
 }

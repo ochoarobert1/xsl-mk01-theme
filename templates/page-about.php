@@ -29,10 +29,16 @@
                         <div class="about-projects-logos-content">
                             <?php $about_logos = get_post_meta(get_the_ID(), 'xsl_about_projects_logos', true); ?>
                             <?php if ((!empty($about_logos)) || ($about_logos != '')) { ?>
-                            <?php foreach ($about_logos as $attachment_id => $attachment_url ) { ?>
-                            <?php $image = wp_get_attachment_image_src($attachment_id, 'benefits_icon' ); ?>
-                            <img src="<?php echo $image[0]; ?>" alt="<?php _e('Logo', 'maxicon'); ?>" class="img-fluid" data-aos="fade-in" data-aos-delay="150" width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>" />
-                            <?php } ?>
+                            <div class="swiper-container gallery-projects">
+                                <div class="row justify-content-center">
+                                    <?php foreach ($about_logos as $attachment_id => $attachment_url ) { ?>
+                                    <?php $image = wp_get_attachment_image_src($attachment_id, 'large' ); ?>
+                                    <div class="project-image col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+                                        <img src="<?php echo $image[0]; ?>" alt="<?php _e('Logo', 'xsl'); ?>" class="img-fluid" data-aos="fade-in" data-aos-delay="150" width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>" />
+                                    </div>
+                                    <?php } ?>
+                                </div>
+                            </div>
                             <?php } ?>
                         </div>
                     </div>

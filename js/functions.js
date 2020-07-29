@@ -2,6 +2,9 @@ function openMenu() {
     "use strict";
     var mobileMenuCnt = document.getElementById("mobileMenuCnt");
     mobileMenuCnt.classList.toggle("header-mobile-container-hidden");
+
+    var mobileMenuBtn = document.getElementById("mobileBtn");
+    mobileMenuBtn.classList.toggle("mobile-btn-hidden");
 }
 
 function documentCustomLoad() {
@@ -51,7 +54,6 @@ function documentCustomLoad() {
 
     });
 
-
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 80,
         slidesPerView: 4,
@@ -60,7 +62,25 @@ function documentCustomLoad() {
         loopedSlides: 5, //looped slides should be the same
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        breakpoints: {
+            0: {
+                loopedSlides: 2, //looped slides should be the same
+                spaceBetween: 5,
+                slidesPerView: 2,
+            },
+            768: {
+                loopedSlides: 2, //looped slides should be the same
+                spaceBetween: 10,
+                slidesPerView: 2,
+            },
+            1024: {
+                loopedSlides: 3, //looped slides should be the same
+                spaceBetween: 40,
+                slidesPerView: 3,
+            },
+        }
     });
+
     var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 0,
         loop: true,
@@ -72,6 +92,17 @@ function documentCustomLoad() {
         thumbs: {
             swiper: galleryThumbs,
         },
+        breakpoints: {
+            0: {
+                loopedSlides: 2, //looped slides should be the same
+            },
+            768: {
+                loopedSlides: 2, //looped slides should be the same
+            },
+            1024: {
+                loopedSlides: 3, //looped slides should be the same
+            },
+        }
     });
 
 }

@@ -54,7 +54,7 @@
                         <?php if ($array_related->have_posts()) : ?>
                         <div class="row">
                             <?php while ($array_related->have_posts()) : $array_related->the_post(); ?>
-                            <div class="single-local-related-item col">
+                            <div class="single-local-related-item col-xl col-lg col-md col-sm-6 col-12">
                                 <a href="<?php the_permalink();?>">
                                     <?php the_post_thumbnail('local_img', array('class' => 'img-fluid', 'loading' => 'lazy')); ?>
                                 </a>

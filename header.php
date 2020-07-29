@@ -179,23 +179,29 @@
                         <a href="<?php echo $header_options['phone_number']; ?>" title="<?php _e('Haz clic aquí para llamar directamente a nuestro Master', 'xsl'); ?>"><?php echo $header_options['formatted_phone_number']; ?></a>
                         <?php } ?>
 
-                        <div class="social-header">
-                            <?php if ((isset($social_options['facebook'])) && ($social_options['facebook'] != '')) { ?>
-                            <a href="<?php echo $social_options['facebook']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <?php } ?>
 
-                            <?php if ((isset($social_options['twitter'])) && ($social_options['twitter'] != '')) { ?>
-                            <a href="<?php echo $social_options['twitter']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <?php } ?>
+                    </div>
+                    <div class="social-header">
+                        <?php if ((isset($social_options['facebook'])) && ($social_options['facebook'] != '')) { ?>
+                        <a href="<?php echo $social_options['facebook']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <?php } ?>
 
-                            <?php if ((isset($social_options['instagram'])) && ($social_options['instagram'] != '')) { ?>
-                            <a href="<?php echo $social_options['instagram']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <?php } ?>
+                        <?php if ((isset($social_options['twitter'])) && ($social_options['twitter'] != '')) { ?>
+                        <a href="<?php echo $social_options['twitter']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <?php } ?>
 
-                            <?php if ((isset($social_options['youtube'])) && ($social_options['youtube'] != '')) { ?>
-                            <a href="<?php echo $social_options['youtube']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-youtube"></i></a>
-                            <?php } ?>
-                        </div>
+                        <?php if ((isset($social_options['instagram'])) && ($social_options['instagram'] != '')) { ?>
+                        <a href="<?php echo $social_options['instagram']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <?php } ?>
+
+                        <?php if ((isset($social_options['youtube'])) && ($social_options['youtube'] != '')) { ?>
+                        <a href="<?php echo $social_options['youtube']; ?>" title="<?php _e('Haz clic aquí para visitar nuestro perfil', 'xsl'); ?>" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <?php } ?>
+                    </div>
+                    <div class="lang-mobile">
+                        <a class="lang-item" href="<?php echo $network_url; ?>"><?php _e('Español', 'xsl'); ?></a>
+                        <a class="lang-item" href="<?php echo $network_url . '/en'; ?>"><?php _e('Inglés', 'xsl'); ?></a>
+                        <a class="lang-item" href="<?php echo $network_url . '/de'; ?>"><?php _e('Alemán', 'xsl'); ?></a>
                     </div>
                 </div>
 

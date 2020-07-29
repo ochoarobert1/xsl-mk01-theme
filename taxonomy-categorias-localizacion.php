@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php $page_data = get_page_by_path('localizaciones'); ?>
+<?php $tax_id = get_queried_object_id(); ?>
 <?php $current_parent = get_ancestors( get_queried_object_id(), 'categorias-localizacion' ); ?>
 <main class="container-fluid p-0" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="row no-gutters">
@@ -11,7 +11,7 @@
                         <h2><?php echo single_term_title(); ?></h2>
                     </div>
                     <div class="main-banner-image offset-xl-4 offset-lg-4 offset-md-4 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-                        <?php $bg_banner_id = get_post_meta($page_data->ID, 'xsl_page_general_banner_image_id', true); ?>
+                        <?php $bg_banner_id = get_term_meta($tax_id, 'showcase-taxonomy-image-id', true); ?>
                         <?php $bg_banner = wp_get_attachment_image_src($bg_banner_id, 'banner_img', false); ?>
                         <img itemprop="logo" content="<?php echo $bg_banner[0];?>" src="<?php echo $bg_banner[0];?>" title="<?php echo get_post_meta( $bg_banner_id, '_wp_attachment_image_alt', true ); ?>" alt="<?php echo get_post_meta($bg_banner_id, '_wp_attachment_image_alt', true ); ?>" class="img-fluid" data-aos="fadeIn" data-aos-delay="150" width="<?php echo $bg_banner[1]; ?>" height="<?php echo $bg_banner[2]; ?>" />
                     </div>
@@ -25,7 +25,7 @@
             <div class="container">
                 <div class="row">
                     <?php while (have_posts()) : the_post(); ?>
-                    <div class="tax-individual-item col-4">
+                    <div class="tax-individual-item col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                         <a href="<?php the_permalink();?>">
                             <?php the_post_thumbnail('tax_children_small_img', array('class' => 'img-fluid', 'loading' => 'lazy')); ?>
                         </a>
@@ -42,15 +42,19 @@
         <div class="tax-other-cats-container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="container local-tax-children-container">
                 <div class="row">
-                   <div class="other-cats-title col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                       <h2><?php _e('Categorias Relacionadas', 'xsl'); ?></h2>
-                   </div>
+                    <div class="other-cats-title col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h2><?php _e('Categorias Relacionadas', 'xsl'); ?></h2>
+                    </div>
+                    <?php if (!empty($current_parent)) { ?>
                     <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => $current_parent[0] ); ?>
+                    <?php } else { ?>
+                    <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => $tax_id ); ?>
+                    <?php } ?>
                     <?php $array_taxonomies = get_terms($args); ?>
                     <?php if (!empty($array_taxonomies)) : ?>
                     <?php $i = 1; ?>
                     <?php foreach ($array_taxonomies as $taxes) { ?>
-                    <?php if ($i < 4) { $class = 'col-6'; $size = 'tax_children_small_img'; } else { $class = 'col-12'; $size = 'tax_children_large_img'; } ?>
+                    <?php if ($i < 4) { $class = 'col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12'; $size = 'tax_children_small_img'; } else { $class = 'col-12'; $size = 'tax_children_large_img'; } ?>
                     <div class="local-children-tax-item <?php echo $class; ?>">
                         <div class="local-children-tax-item-wrapper">
                             <?php $tax_bg_id = get_term_meta( $taxes->term_id, 'showcase-taxonomy-image-id', true); ?>
@@ -64,6 +68,7 @@
                     <?php if ($i == 3) { $i = 0; } ?>
                     <?php $i++; } ?>
                     <?php endif; ?>
+
                 </div>
             </div>
         </div>

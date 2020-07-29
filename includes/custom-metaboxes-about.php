@@ -15,16 +15,16 @@ $cmb_about_projects = new_cmb2_box( array(
 
 $cmb_about_projects->add_field( array(
     'id'   => $prefix . 'about_projects_logos',
-    'name' => esc_html__('Featured logos', 'maxicon'),
-    'desc' => esc_html__('Select the featured logos for HomePage', 'maxicon'),
+    'name' => esc_html__('Featured logos', 'xsl'),
+    'desc' => esc_html__('Select the featured logos for HomePage', 'xsl'),
     'type' => 'file_list',
     'query_args' => array( 'type' => 'image' ),
     'text' => array(
-        'add_upload_files_text' => esc_html__( 'Upload Logo', 'maxicon' ),
-        'remove_image_text' => esc_html__( 'Remove Logo', 'maxicon' ),
-        'file_text' => esc_html__( 'Logo', 'maxicon' ),
-        'file_download_text' => esc_html__( 'Download', 'maxicon' ),
-        'remove_text' => esc_html__( 'Remove', 'maxicon' ),
+        'add_upload_files_text' => esc_html__( 'Upload Logo', 'xsl' ),
+        'remove_image_text' => esc_html__( 'Remove Logo', 'xsl' ),
+        'file_text' => esc_html__( 'Logo', 'xsl' ),
+        'file_download_text' => esc_html__( 'Download', 'xsl' ),
+        'remove_text' => esc_html__( 'Remove', 'xsl' ),
     ),
     'preview_size' => array( 100, 100 )
 ) );
