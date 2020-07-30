@@ -19,8 +19,8 @@
             </div>
         </section>
 
+        <?php if (!empty($current_parent)) { ?>
         <?php echo get_template_part('templates/templates-filter-locations'); ?>
-
         <div class="tax-individuals-container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" data-aos="fadeIn">
             <div class="container">
                 <div class="row">
@@ -31,13 +31,12 @@
                         </a>
                         <h3><?php the_title(); ?></h3>
                     </div>
-
                     <?php endwhile; ?>
                     <?php wp_reset_query(); ?>
                 </div>
             </div>
         </div>
-
+        <?php } ?>
 
         <div class="tax-other-cats-container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="container local-tax-children-container">

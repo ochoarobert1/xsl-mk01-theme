@@ -105,6 +105,10 @@ function documentCustomLoad() {
         }
     });
 
+    jQuery('.navbar .dropdown > a').click(function() {
+        location.href = this.href;
+    });
+
 }
 
 document.addEventListener("DOMContentLoaded", documentCustomLoad, false);

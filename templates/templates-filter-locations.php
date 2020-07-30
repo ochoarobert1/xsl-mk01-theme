@@ -25,11 +25,7 @@
                             <?php if (!empty($array_categories)) : ?>
                             <?php $i = 1; ?>
                             <?php foreach ($array_categories as $item) { ?>
-                            <?php if (is_archive('localizaciones')) {  ?>
-                            <a class="dropdown-item <?php echo $class; ?>" id="<?php echo $item->slug; ?>-tab" data-toggle="tab" href="#<?php echo $item->slug; ?>" role="tab" aria-controls="<?php echo $item->slug; ?>" aria-selected="true"><?php echo $item->name; ?></a>
-                            <?php } else { ?>
                             <a class="dropdown-item" href="<?php echo get_term_link($item); ?>"><?php echo $item->name; ?></a>
-                            <?php } ?>
                             <?php $i++; } ?>
                             <?php endif; ?>
                             <a class="dropdown-item" href="<?php echo home_url('/localizaciones'); ?>"><?php _e('Todos', 'xsl'); ?></a>
