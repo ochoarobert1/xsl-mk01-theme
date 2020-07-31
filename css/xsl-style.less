@@ -284,6 +284,10 @@ a {
             }
         }
 
+        & .dropdown-lang {
+            border: 0;
+        }
+
         & .searchform {
             max-width: 300px;
             display: inline-block;
@@ -337,13 +341,19 @@ a {
 
             & .dropdown-menu {
                 margin-top: -5px;
+                min-width: 20em !important;
+                padding: 1rem 0;
+                padding-bottom: 0;
+                border: 0;
+                border-radius: 0;
 
                 &:hover {
                     display: block;
                 }
 
                 & .nav-link {
-                    padding: .2rem .5rem;
+                    padding: 0.5rem 0.5rem;
+                    font-size: .96rem;
                 }
             }
 
@@ -357,6 +367,22 @@ a {
         & .active {
             & .nav-link {
                 color: @darkblue;
+            }
+
+            & .dropdown-menu {
+                & .nav-link {
+                    color: @softgray;
+
+                    &:hover {
+                        color: @darkblue;
+                    }
+                }
+
+                & .active {
+                    & .nav-link {
+                        color: @darkblue;
+                    }
+                }
             }
         }
     }

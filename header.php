@@ -89,7 +89,7 @@
                                 <button type="button" class="btn btn-language dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <?php _e('Idioma', 'xsl'); ?> <small class="bars"><span></span><span></span><span></span></small>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu dropdown-lang">
                                     <a class="dropdown-item" href="<?php echo $network_url; ?>"><?php _e('Español', 'xsl'); ?></a>
                                     <a class="dropdown-item" href="<?php echo $network_url . '/en'; ?>"><?php _e('Inglés', 'xsl'); ?></a>
                                     <a class="dropdown-item" href="<?php echo $network_url . '/de'; ?>"><?php _e('Alemán', 'xsl'); ?></a>

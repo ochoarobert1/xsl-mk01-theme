@@ -19,8 +19,8 @@
             </div>
         </section>
 
-        <?php if (!empty($current_parent)) { ?>
         <?php echo get_template_part('templates/templates-filter-locations'); ?>
+        <?php if (!empty($current_parent)) { ?>
         <div class="tax-individuals-container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" data-aos="fadeIn">
             <div class="container">
                 <div class="row">
