@@ -4,9 +4,9 @@
             <div class="local-taxonomies-filter-content col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><?php _e('Pais', 'xsl'); ?></a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><?php _e('Lugares', 'xsl'); ?></a>
                         <div class="dropdown-menu">
-                            <?php $args = array('taxonomy' => 'paises', 'hide_empty' => true, 'parent' => 0); ?>
+                            <?php $args = array('taxonomy' => 'paises', 'hide_empty' => false, 'parent' => 0); ?>
                             <?php $array_categories = get_terms($args); ?>
                             <?php if (!empty($array_categories)) : ?>
                             <?php foreach ($array_categories as $item) { ?>

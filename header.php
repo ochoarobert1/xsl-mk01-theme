@@ -91,8 +91,8 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-lang">
                                     <a class="dropdown-item" href="<?php echo $network_url; ?>"><?php _e('Español', 'xsl'); ?></a>
-                                    <a class="dropdown-item" href="<?php echo $network_url . '/en'; ?>"><?php _e('Inglés', 'xsl'); ?></a>
-                                    <a class="dropdown-item" href="<?php echo $network_url . '/de'; ?>"><?php _e('Alemán', 'xsl'); ?></a>
+                                    <a class="dropdown-item" href="<?php echo $network_url . 'en'; ?>"><?php _e('Inglés', 'xsl'); ?></a>
+                                    <a class="dropdown-item" href="<?php echo $network_url . 'de'; ?>"><?php _e('Alemán', 'xsl'); ?></a>
                                 </div>
                             </div>
                             <?php echo get_search_form(); ?>

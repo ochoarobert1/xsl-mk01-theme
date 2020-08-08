@@ -1325,6 +1325,12 @@ a {
         }
     }
 
+    & .dropdown-toggle:hover {
+        & ~ .dropdown-menu {
+            display: block;
+        }
+    }
+
     & .dropdown-toggle::after {
         border-top: .3em solid #f6bed8;
     }
@@ -1334,6 +1340,10 @@ a {
         border-radius: 0;
         margin: 0;
         border-top: 1px solid #f6bed8;
+
+        &:hover {
+            display: block;
+        }
 
         & .dropdown-item {
             white-space: pre-wrap;

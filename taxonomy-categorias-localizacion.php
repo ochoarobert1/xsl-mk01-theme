@@ -42,7 +42,13 @@
             <div class="container local-tax-children-container">
                 <div class="row">
                     <div class="other-cats-title col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <h2><?php _e('Categorias Relacionadas', 'xsl'); ?></h2>
+
+                        <?php if (!empty($current_parent)) { ?>
+                        <?php $term_current = get_term_by('id', $current_parent[0], 'categorias-localizacion'); ?>
+                        <?php } else { ?>
+                        <?php $term_current = get_term_by('id', get_queried_object_id(), 'categorias-localizacion'); ?>
+                        <?php } ?>
+                        <h2><?php echo $term_current->name; ?></h2>
                     </div>
                     <?php if (!empty($current_parent)) { ?>
                     <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => $current_parent[0] ); ?>

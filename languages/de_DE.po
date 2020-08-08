@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Extreme Shooting Locations [Mk.01]\n"
-"POT-Creation-Date: 2020-07-18 20:26-0400\n"
-"PO-Revision-Date: 2020-07-18 20:27-0400\n"
+"POT-Creation-Date: 2020-08-07 23:09-0400\n"
+"PO-Revision-Date: 2020-08-07 23:10-0400\n"
 "Last-Translator: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language-Team: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language: de_DE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -104,8 +104,8 @@ msgstr "Klicken Sie hier, um Ihre Nachricht in unserer E-Mail zu hinterlassen"
 msgid "Haz clic aquí para llamar directamente a nuestro Master"
 msgstr "Klicken Sie hier, um unseren Master direkt anzurufen"
 
-#: header.php:71 header.php:75 header.php:79 header.php:83 header.php:184
-#: header.php:188 header.php:192 header.php:196
+#: header.php:71 header.php:75 header.php:79 header.php:83 header.php:186
+#: header.php:190 header.php:194 header.php:198
 #: includes/wp_custom_functions.php:87 includes/wp_custom_functions.php:91
 #: includes/wp_custom_functions.php:95 includes/wp_custom_functions.php:99
 #: templates/page-contact.php:57 templates/page-contact.php:63
@@ -117,15 +117,15 @@ msgstr "Klicken Sie hier, um unser Profil zu besuchen"
 msgid "Idioma"
 msgstr "Sprache"
 
-#: header.php:93
+#: header.php:93 header.php:202
 msgid "Español"
 msgstr "Spanisch"
 
-#: header.php:94
+#: header.php:94 header.php:203
 msgid "Inglés"
 msgstr "Englisch"
 
-#: header.php:95
+#: header.php:95 header.php:204
 msgid "Alemán"
 msgstr "Deutsch"
 
@@ -651,24 +651,23 @@ msgstr "Empfohlene Logos"
 msgid "Select the featured logos for HomePage"
 msgstr "Wählen Sie die vorgestellten Logos für HomePage"
 
-#: includes/custom-metaboxes-about.php:23 includes/wp_custom_metabox.php:133
+#: includes/custom-metaboxes-about.php:23
 msgid "Upload Logo"
 msgstr "Logo hochladen"
 
-#: includes/custom-metaboxes-about.php:24 includes/wp_custom_metabox.php:134
+#: includes/custom-metaboxes-about.php:24
 msgid "Remove Logo"
 msgstr "Entfernen Logo"
 
-#: includes/custom-metaboxes-about.php:25 includes/wp_custom_metabox.php:135
-#: templates/page-about.php:34
+#: includes/custom-metaboxes-about.php:25 templates/page-about.php:37
 msgid "Logo"
 msgstr "Logo"
 
-#: includes/custom-metaboxes-about.php:26 includes/wp_custom_metabox.php:136
+#: includes/custom-metaboxes-about.php:26
 msgid "Download"
 msgstr "Eigenschaften"
 
-#: includes/custom-metaboxes-about.php:27 includes/wp_custom_metabox.php:137
+#: includes/custom-metaboxes-about.php:27
 msgid "Remove"
 msgstr "Entfernen"
 
@@ -986,16 +985,36 @@ msgid "Localizaciones: Galería"
 msgstr "Standorte: Galerie"
 
 #: includes/wp_custom_metabox.php:128
-msgid "Garleía"
-msgstr "Garleéa"
+msgid "Galería"
+msgstr "Galerie"
 
 #: includes/wp_custom_metabox.php:129
 msgid ""
-"Cargue o seleccione las imágenes para incluirlas en la Galerpia de la "
+"Cargue o seleccione las imágenes para incluirlas en la Galería de la "
 "Localización"
 msgstr ""
 "Hochladen oder Auswählen der Bilder, die in die Standortgalerie aufgenommen "
 "werden sollen"
+
+#: includes/wp_custom_metabox.php:133
+msgid "Cargar Imágenes"
+msgstr "Bilder hochladen"
+
+#: includes/wp_custom_metabox.php:134
+msgid "Remove Imágenes"
+msgstr "Entfernen Image"
+
+#: includes/wp_custom_metabox.php:135
+msgid "Imagen"
+msgstr "Bild"
+
+#: includes/wp_custom_metabox.php:136
+msgid "Descargar"
+msgstr "Herunterladen"
+
+#: includes/wp_custom_metabox.php:137
+msgid "Remover"
+msgstr "Entfernen"
 
 #: includes/wp_custom_post_type.php:7
 msgctxt "Post Type General Name"
@@ -1374,7 +1393,7 @@ msgstr "Link de Cookies"
 #: post-formats/format-chat.php:11 post-formats/format-gallery.php:11
 #: post-formats/format-image.php:11 post-formats/format-link.php:11
 #: post-formats/format-quote.php:11 post-formats/format-status.php:11
-#: post-formats/format-video.php:11 post-formats/format.php:11
+#: post-formats/format-video.php:11
 msgid "Tags: "
 msgstr "Schilder: "
 
@@ -1382,7 +1401,7 @@ msgstr "Schilder: "
 #: post-formats/format-chat.php:16 post-formats/format-gallery.php:16
 #: post-formats/format-image.php:16 post-formats/format-link.php:16
 #: post-formats/format-quote.php:16 post-formats/format-status.php:16
-#: post-formats/format-video.php:16 post-formats/format.php:16
+#: post-formats/format-video.php:16 post-formats/format.php:15
 msgid "Pages:"
 msgstr "Seiten:"
 
@@ -1395,7 +1414,7 @@ msgstr "%s Suchergebnisse für "
 msgid "Buscar por Términos:"
 msgstr "Suche nach Begriffen:"
 
-#: taxonomy-categorias-localizacion.php:46 taxonomy-paises.php:46
+#: taxonomy-paises.php:46
 msgid "Categorias Relacionadas"
 msgstr "Verwandte Kategorien"
 
@@ -1486,12 +1505,12 @@ msgid "Enviar"
 msgstr "Senden"
 
 #: templates/templates-filter-locations.php:7
-msgid "Pais"
-msgstr "Land"
+msgid "Lugares"
+msgstr "Orte"
 
 #: templates/templates-filter-locations.php:17
-#: templates/templates-filter-locations.php:35
-#: templates/templates-filter-locations.php:58
+#: templates/templates-filter-locations.php:31
+#: templates/templates-filter-locations.php:54
 msgid "Todos"
 msgstr "Alle"
 
@@ -1499,7 +1518,7 @@ msgstr "Alle"
 msgid "Categorías"
 msgstr "Kategorien"
 
-#: templates/templates-filter-locations.php:39
+#: templates/templates-filter-locations.php:35
 msgid "Tipo"
 msgstr "Typ"
 
@@ -1538,3 +1557,9 @@ msgid ""
 msgstr ""
 "http://www.robertochoa.com.ve/?"
 "utm_source=theme&utm_medium=link&utm_content=xsl"
+
+#~ msgid "Garleía"
+#~ msgstr "Garleéa"
+
+#~ msgid "Pais"
+#~ msgstr "Land"
