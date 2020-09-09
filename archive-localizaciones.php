@@ -1,5 +1,14 @@
 <?php get_header(); ?>
+<?php $lang = get_locale(); ?>
+<?php if ($lang == 'es_ES') { ?>
 <?php $page_data = get_page_by_path('localizaciones'); ?>
+<?php } ?>
+<?php if ($lang == 'en_US') { ?>
+<?php $page_data = get_page_by_path('localizaciones-en'); ?>
+<?php } ?>
+<?php if ($lang == 'de_DE') { ?>
+<?php $page_data = get_page_by_path('localizaciones-de'); ?>
+<?php } ?>
 <main class="container-fluid p-0" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <div class="row no-gutters">
         <section class="main-banner col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" data-aos="fadeIn">
@@ -27,7 +36,7 @@
             <div class="container-fluid local-tax-children-container">
                 <div class="row">
 
-                    <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => 0 ); ?>
+                    <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => 0, 'orderby' => 'term_order', 'order' => 'ASC' ); ?>
                     <?php $array_taxonomies = get_terms($args); ?>
                     <?php if (!empty($array_taxonomies)) : ?>
                     <?php $i = 1; ?>

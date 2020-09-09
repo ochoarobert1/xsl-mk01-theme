@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Extreme Shooting Locations [Mk.01]\n"
-"POT-Creation-Date: 2020-08-07 23:09-0400\n"
-"PO-Revision-Date: 2020-08-07 23:10-0400\n"
+"POT-Creation-Date: 2020-08-16 19:42-0400\n"
+"PO-Revision-Date: 2020-08-16 19:43-0400\n"
 "Last-Translator: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language-Team: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language: de_DE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -70,31 +70,54 @@ msgstr "Über"
 msgid "Menu Header - Principal"
 msgstr "Menü-Header - Main"
 
-#: functions.php:123
+#: functions.php:114
+msgid "Menu Mobile - Principal"
+msgstr "Menü Mobil - Haupt"
+
+#: functions.php:115
+msgid "Menu Footer - Principal"
+msgstr "Menü-Fußzeile - Main"
+
+#: functions.php:125
 msgid "Sidebar Principal"
 msgstr "Sidebar Main"
 
-#: functions.php:125
+#: functions.php:127
 msgid "Estos widgets seran vistos en las entradas y páginas del sitio"
 msgstr ""
 "Diese Widgets werden auf den Beiträgen und Seiten der Website zu sehen sein"
 
-#: functions.php:133
+#: functions.php:135
 #, php-format
 msgid "Footer Section %d"
 msgstr "Fußzeilenabschnitt %d"
 
-#: functions.php:135
+#: functions.php:137
 msgid "Footer Section"
 msgstr "Fußzeilenabschnitt"
 
-#: functions.php:168
+#: functions.php:170
 msgid "Gracias por crear con "
 msgstr "Vielen Dank für die Erstellung mit "
 
-#: functions.php:170
+#: functions.php:172
 msgid "Tema desarrollado por "
 msgstr "Thema entwickelt von "
+
+#: functions.php:303 includes/contact-email.php:131
+msgid "The Exclusive Shooting Location: Nuevo Mensaje"
+msgstr "The Exclusive Shooting Location: Neue Nachricht"
+
+#: functions.php:306
+msgid "Su mensaje no pudo ser enviado. Por favor intente nuevamente."
+msgstr ""
+"Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+
+#: functions.php:308
+msgid "Gracias por su mensaje. Le contactaremos lo antes posible."
+msgstr ""
+"Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich mit "
+"Ihnen in Verbindung setzen."
 
 #: header.php:62 header.php:175 templates/page-contact.php:51
 msgid "Haz clic aquí para dejar tu mensaje en nuestro correo electrónico"
@@ -638,6 +661,30 @@ msgstr "Installieren des Plugins %1$s (%2$d/%3$d)"
 #: includes/class-wp-bootstrap-navwalker.php:365
 msgid "Add a menu"
 msgstr "Hinzufügen eines Menüs"
+
+#: includes/contact-email.php:136
+msgid "Los detalles a continuación"
+msgstr "Details unten"
+
+#: includes/contact-email.php:158
+msgid "Nombre:"
+msgstr "Namen:"
+
+#: includes/contact-email.php:163
+msgid "Email:"
+msgstr "E-Mail:"
+
+#: includes/contact-email.php:168
+msgid "Teléfono:"
+msgstr "Telefon:"
+
+#: includes/contact-email.php:173
+msgid "Comentarios:"
+msgstr "Gästebewertungen:"
+
+#: includes/contact-email.php:219
+msgid "No responda a este correo, no esta siendo monitoreado."
+msgstr "Reagieren Sie nicht auf diese E-Mail, Sie werden nicht überwacht."
 
 #: includes/custom-metaboxes-about.php:7
 msgid "About: Projectos"
@@ -1389,6 +1436,50 @@ msgstr "Cookie-Zustimmungstext."
 msgid "Link de Cookies"
 msgstr "Link de Cookies"
 
+#: includes/wp_enqueue_scripts.php:153
+msgid "Error: El nombre no puede estar vacio"
+msgstr "Fehler: Der Name darf nicht leer sein."
+
+#: includes/wp_enqueue_scripts.php:154
+msgid "Error: El nombre debe ser valido"
+msgstr "Fehler: Der Name muss gültig sein"
+
+#: includes/wp_enqueue_scripts.php:155
+msgid "Error: El apellido no puede estar vacio"
+msgstr "Fehler: Nachname darf nicht leer sein"
+
+#: includes/wp_enqueue_scripts.php:156
+msgid "Error: El apellido debe ser valido"
+msgstr "Fehler: Nachname muss gültig sein"
+
+#: includes/wp_enqueue_scripts.php:157
+msgid "Error: El correo no puede estar vacio"
+msgstr "Fehler: E-Mail darf nicht leer sein"
+
+#: includes/wp_enqueue_scripts.php:158
+msgid "Error: El correo tiene un formato inválido"
+msgstr "Fehler: E-Mail hat ein ungültiges Format"
+
+#: includes/wp_enqueue_scripts.php:159
+msgid "Error: El teléfono no puede estar vacio"
+msgstr "Fehler: Telefon darf nicht leer sein"
+
+#: includes/wp_enqueue_scripts.php:160
+msgid "Error: El teléfono tiene un formato inválido"
+msgstr "Fehler: Das Telefon hat ein ungültiges Format"
+
+#: includes/wp_enqueue_scripts.php:161
+msgid "Error: El mensaje no puede estar vacio"
+msgstr "Fehler: Nachricht darf nicht leer sein"
+
+#: includes/wp_enqueue_scripts.php:162
+msgid "Mensaje Enviado"
+msgstr "Gesendete Nachricht"
+
+#: includes/wp_enqueue_scripts.php:163
+msgid "Error en el envío"
+msgstr "Senden fehlgeschlagen"
+
 #: post-formats/format-aside.php:11 post-formats/format-audio.php:11
 #: post-formats/format-chat.php:11 post-formats/format-gallery.php:11
 #: post-formats/format-image.php:11 post-formats/format-link.php:11
@@ -1428,7 +1519,7 @@ msgstr "Eigenschaftstyp"
 
 #: templates/page-register-location.php:22
 msgid "Vivienda Familiar"
-msgstr "Familienwohnungen"
+msgstr "Wohnung"
 
 #: templates/page-register-location.php:25
 msgid "Palacio"
@@ -1448,17 +1539,18 @@ msgstr "Büro"
 
 #: templates/page-register-location.php:38
 msgid "Multiespacio"
-msgstr "Multiespacio"
+msgstr "Grossraum"
 
 #: templates/page-register-location.php:41
 msgid "Ocio y Restauación"
-msgstr "Freizeit und Restaution"
+msgstr "Freizeiteinrichtung"
 
 #: templates/page-register-location.php:44
 msgid "Espacio Abierto"
-msgstr "Open Space"
+msgstr "Offener Raum"
 
 #: templates/page-register-location.php:47
+#: templates/page-register-location.php:95
 msgid "Otros"
 msgstr "Sonstige"
 
@@ -1484,9 +1576,34 @@ msgstr "Telefon"
 msgid "Provincias"
 msgstr "Provinzen"
 
+#: templates/page-register-location.php:83
+#: templates/page-register-location.php:84
+#: templates/page-register-location.php:85
+#: templates/page-register-location.php:86
+#: templates/page-register-location.php:87
+#: templates/page-register-location.php:105
+#: templates/page-register-location.php:106
+#: templates/page-register-location.php:107
+#: templates/page-register-location.php:108
+#: templates/page-register-location.php:109
+msgid "Seleccionar"
+msgstr "Wählen"
+
 #: templates/page-register-location.php:91
 msgid "Alquilas tu propiedad para:"
 msgstr "Sie vermieten Ihre Immobilie für:"
+
+#: templates/page-register-location.php:92
+msgid "Publicidad, Cine y TV"
+msgstr "Dreharbeiten Kino und Fernseher"
+
+#: templates/page-register-location.php:93
+msgid "Sesiones fotográficas"
+msgstr "Fotoshootings"
+
+#: templates/page-register-location.php:94
+msgid "Eventos corporativos y privados"
+msgstr "Private und Firmenevents"
 
 #: templates/page-register-location.php:98
 msgid "Otros:"
@@ -1500,7 +1617,7 @@ msgstr "Einheiten"
 msgid "Comentarios"
 msgstr "Kommentare"
 
-#: templates/templates-contact-form.php:41
+#: templates/templates-contact-form.php:39
 msgid "Enviar"
 msgstr "Senden"
 

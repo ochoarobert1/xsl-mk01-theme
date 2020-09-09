@@ -110,7 +110,9 @@ add_theme_support( 'html5', array(
 -------------------------------------------------------------- */
 
 register_nav_menus( array(
-    'header_menu' => __( 'Menu Header - Principal', 'xsl' )
+    'header_menu' => __( 'Menu Header - Principal', 'xsl' ),
+    'mobile_menu' => __( 'Menu Mobile - Principal', 'xsl' ),
+    'footer_menu' => __( 'Menu Footer - Principal', 'xsl' )
 ) );
 
 /* --------------------------------------------------------------
@@ -199,7 +201,7 @@ if ( function_exists('add_theme_support') ) {
 }
 if ( function_exists('add_image_size') ) {
     add_image_size('avatar', 100, 100, true);
-    add_image_size('banner_img', 1200, 500, array('center', 'center'));
+    add_image_size('banner_img', 1350, 530, array('center', 'center'));
     add_image_size('benefits_icon', 105, 105, true);
     add_image_size('tax_local_img', 800, 400, array('center', 'center'));
     add_image_size('tax_children_small_img', 540, 270, array('center', 'center'));
@@ -225,3 +227,81 @@ function xsl_add_slug_body_class( $classes ) {
 }
 
 add_filter( 'body_class', 'xsl_add_slug_body_class' );
+
+/* --------------------------------------------------------------
+    AJAX SEND QUOTE EMAIL
+-------------------------------------------------------------- */
+add_action('wp_ajax_nopriv_send_contact_form', 'send_contact_form_handler');
+add_action('wp_ajax_send_contact_form', 'send_contact_form_handler');
+
+function send_contact_form_handler() {
+    if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+        error_reporting( E_ALL );
+        ini_set( 'display_errors', 1 );
+    }
+
+    //    $header_options = get_option('pcy_header_settings');
+    //    $email_address = $header_options['email_address'];
+
+    //    $google_options = get_option('ioa_google_settings');
+    /*
+    if ($submit["g-recaptcha-response"]) {
+        $post_data = http_build_query(
+            array(
+                'secret' => $google_options['google_secret'],
+                'response' => $submit['g-recaptcha-response'],
+                'remoteip' => $_SERVER['REMOTE_ADDR']
+            ), '', '&');
+
+        $opts = array('http' =>
+                      array(
+                          'method'  => 'POST',
+                          'header'  => 'Content-type: application/x-www-form-urlencoded',
+                          'content' => $post_data
+                      )
+                     );
+
+        $context  = stream_context_create($opts);
+        $response = file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $context);
+        $captcha_response = json_decode($response);
+    }
+    if($captcha_response->success == true) {
+*/
+    ob_start();
+    require_once get_theme_file_path( '/includes/contact-email.php' );
+    $body = ob_get_clean();
+    $body = str_replace( [
+        '{fname}',
+        '{lname}',
+        '{email}',
+        '{phone}',
+        '{comments}'
+    ], [
+        $_POST['contact_name'],
+        $_POST['contact_lname'],
+        $_POST['contact_email'],
+        $_POST['contact_phone'],
+        $_POST['contact_comments']
+    ], $body );
+
+    require_once ABSPATH . WPINC . '/PHPMailer/PHPMailer.php';
+    $mail = new PHPMailer\PHPMailer\PHPMailer;
+
+    $mail->isHTML( true );
+    $mail->Body = $body;
+    $mail->CharSet = 'UTF-8';
+    $mail->addAddress( 'info@theexclusiveshootinglocation.com' );
+    $mail->addCC($_POST['contact_email']);
+    $mail->setFrom( "noreply@{$_SERVER['SERVER_NAME']}", esc_html( get_bloginfo( 'name' ) ) );
+    $mail->Subject = esc_html__( 'The Exclusive Shooting Location: Nuevo Mensaje', 'xsl' );
+
+    if ( ! $mail->send() ) {
+        wp_send_json_error( esc_html__( 'Su mensaje no pudo ser enviado. Por favor intente nuevamente.', 'xsl' ), 400 );
+    } else {
+        wp_send_json_success( esc_html__( "Gracias por su mensaje. Le contactaremos lo antes posible.", 'xsl' ), 200 );
+    }
+    /*
+    }
+*/
+    wp_die();
+}

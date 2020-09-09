@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Extreme Shooting Locations [Mk.01]\n"
-"POT-Creation-Date: 2020-08-06 19:02-0400\n"
-"PO-Revision-Date: 2020-08-06 19:03-0400\n"
+"POT-Creation-Date: 2020-08-16 19:41-0400\n"
+"PO-Revision-Date: 2020-08-16 19:42-0400\n"
 "Last-Translator: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language-Team: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language: en_US\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -71,30 +71,50 @@ msgstr "About"
 msgid "Menu Header - Principal"
 msgstr "Menu Header - Main"
 
-#: functions.php:123
+#: functions.php:114
+msgid "Menu Mobile - Principal"
+msgstr "Menu Mobile - Main"
+
+#: functions.php:115
+msgid "Menu Footer - Principal"
+msgstr "Menu Footer - Main"
+
+#: functions.php:125
 msgid "Sidebar Principal"
 msgstr "Sidebar Main"
 
-#: functions.php:125
+#: functions.php:127
 msgid "Estos widgets seran vistos en las entradas y páginas del sitio"
 msgstr "These widgets will be seen in the entries and pages of the site"
 
-#: functions.php:133
+#: functions.php:135
 #, php-format
 msgid "Footer Section %d"
 msgstr "Footer Section %d"
 
-#: functions.php:135
+#: functions.php:137
 msgid "Footer Section"
 msgstr "Footer Section"
 
-#: functions.php:168
+#: functions.php:170
 msgid "Gracias por crear con "
 msgstr "Thank you for creating with "
 
-#: functions.php:170
+#: functions.php:172
 msgid "Tema desarrollado por "
 msgstr "Theme Developed By "
+
+#: functions.php:303 includes/contact-email.php:131
+msgid "The Exclusive Shooting Location: Nuevo Mensaje"
+msgstr "The Exclusive Shooting Location: New Message"
+
+#: functions.php:306
+msgid "Su mensaje no pudo ser enviado. Por favor intente nuevamente."
+msgstr "Your message could not be sent. Please try again."
+
+#: functions.php:308
+msgid "Gracias por su mensaje. Le contactaremos lo antes posible."
+msgstr "Thank you for your message. We will contact you as soon as possible."
 
 #: header.php:62 header.php:175 templates/page-contact.php:51
 msgid "Haz clic aquí para dejar tu mensaje en nuestro correo electrónico"
@@ -626,6 +646,30 @@ msgstr "Installing Plugin%1$s (%2$d/%3$d)"
 #: includes/class-wp-bootstrap-navwalker.php:365
 msgid "Add a menu"
 msgstr "Add a menu"
+
+#: includes/contact-email.php:136
+msgid "Los detalles a continuación"
+msgstr "Details are shown below"
+
+#: includes/contact-email.php:158
+msgid "Nombre:"
+msgstr "Name:"
+
+#: includes/contact-email.php:163
+msgid "Email:"
+msgstr "Email:"
+
+#: includes/contact-email.php:168
+msgid "Teléfono:"
+msgstr "Phone number:"
+
+#: includes/contact-email.php:173
+msgid "Comentarios:"
+msgstr "Comments:"
+
+#: includes/contact-email.php:219
+msgid "No responda a este correo, no esta siendo monitoreado."
+msgstr "Do not reply to this email. This account is not monitored."
 
 #: includes/custom-metaboxes-about.php:7
 msgid "About: Projectos"
@@ -1371,6 +1415,50 @@ msgstr "Text of the consent cookie."
 msgid "Link de Cookies"
 msgstr "Link de Cookies"
 
+#: includes/wp_enqueue_scripts.php:153
+msgid "Error: El nombre no puede estar vacio"
+msgstr "Error: The name cannot be empty"
+
+#: includes/wp_enqueue_scripts.php:154
+msgid "Error: El nombre debe ser valido"
+msgstr "Error: The name must be valid"
+
+#: includes/wp_enqueue_scripts.php:155
+msgid "Error: El apellido no puede estar vacio"
+msgstr "Error: Last name cannot be empty"
+
+#: includes/wp_enqueue_scripts.php:156
+msgid "Error: El apellido debe ser valido"
+msgstr "Error: Last name must be valid"
+
+#: includes/wp_enqueue_scripts.php:157
+msgid "Error: El correo no puede estar vacio"
+msgstr "Error: Mail cannot be empty"
+
+#: includes/wp_enqueue_scripts.php:158
+msgid "Error: El correo tiene un formato inválido"
+msgstr "Error: Mail has an invalid format"
+
+#: includes/wp_enqueue_scripts.php:159
+msgid "Error: El teléfono no puede estar vacio"
+msgstr "Error: Phone cannot be empty"
+
+#: includes/wp_enqueue_scripts.php:160
+msgid "Error: El teléfono tiene un formato inválido"
+msgstr "Error: The phone has an invalid format"
+
+#: includes/wp_enqueue_scripts.php:161
+msgid "Error: El mensaje no puede estar vacio"
+msgstr "Error: Message cannot be empty"
+
+#: includes/wp_enqueue_scripts.php:162
+msgid "Mensaje Enviado"
+msgstr "Message Sent"
+
+#: includes/wp_enqueue_scripts.php:163
+msgid "Error en el envío"
+msgstr "Error while sending"
+
 #: post-formats/format-aside.php:11 post-formats/format-audio.php:11
 #: post-formats/format-chat.php:11 post-formats/format-gallery.php:11
 #: post-formats/format-image.php:11 post-formats/format-link.php:11
@@ -1441,6 +1529,7 @@ msgid "Espacio Abierto"
 msgstr "Open Space"
 
 #: templates/page-register-location.php:47
+#: templates/page-register-location.php:95
 msgid "Otros"
 msgstr "Others"
 
@@ -1466,9 +1555,34 @@ msgstr "Phone"
 msgid "Provincias"
 msgstr "Provinces"
 
+#: templates/page-register-location.php:83
+#: templates/page-register-location.php:84
+#: templates/page-register-location.php:85
+#: templates/page-register-location.php:86
+#: templates/page-register-location.php:87
+#: templates/page-register-location.php:105
+#: templates/page-register-location.php:106
+#: templates/page-register-location.php:107
+#: templates/page-register-location.php:108
+#: templates/page-register-location.php:109
+msgid "Seleccionar"
+msgstr "Select"
+
 #: templates/page-register-location.php:91
 msgid "Alquilas tu propiedad para:"
 msgstr "You rent your property for:"
+
+#: templates/page-register-location.php:92
+msgid "Publicidad, Cine y TV"
+msgstr "Advertising, Film and TV"
+
+#: templates/page-register-location.php:93
+msgid "Sesiones fotográficas"
+msgstr "Photo sessions"
+
+#: templates/page-register-location.php:94
+msgid "Eventos corporativos y privados"
+msgstr "Corporate and private events"
 
 #: templates/page-register-location.php:98
 msgid "Otros:"
@@ -1482,7 +1596,7 @@ msgstr "Dimensions"
 msgid "Comentarios"
 msgstr "Comments"
 
-#: templates/templates-contact-form.php:41
+#: templates/templates-contact-form.php:39
 msgid "Enviar"
 msgstr "Send Message"
 

@@ -1,4 +1,4 @@
-// compress: false, javascriptEnabled: true
+// compress: true, javascriptEnabled: true
 /* --------------------------------------------------------------
 /* MAIN LESS MIXINS AND FUNCTIONS - LESSHAT
 -------------------------------------------------------------- */
@@ -55,6 +55,65 @@ a {
     margin: 0.5rem 1.5rem;
     margin-left: 0;
     display: inline-block;
+}
+
+.loader-css {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.loader-css:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid @darkblue;
+    border-color: @darkblue transparent @darkblue transparent;
+    animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.swal-text {
+    text-align: center;
+}
+
+.custom-danger {
+    font-size: .9rem;
+    line-height: .9rem;
+    font-weight: 500;
+    letter-spacing: -0.9px;
+    margin: 0;
+}
+
+.contact-form-response {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 0;
+}
+
+.swal-icon--success__line {
+    background-color: @darkblue  !important;
+}
+
+.swal-icon--success__ring {
+    border: 4px solid hsl(244deg 55% 69% / 20%) !important;
+}
+
+.btn-success {
+    background-color: @darkblue  !important;
+    border-color: @darkblue  !important;
 }
 
 /* --------------------------------------------------------------
@@ -754,7 +813,7 @@ a {
                 align-items: flex-end;
                 justify-content: center;
                 color: @white;
-                background: rgba(25, 50, 120, 0.6);
+                background: rgba(25, 50, 120, 0.1);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -1272,7 +1331,7 @@ a {
 
         & .local-children-tax-item-link {
             position: absolute;
-            background: rgba(25, 50, 120, 0.5);
+            background: rgba(25, 50, 120, 0.1);
             top: 0;
             left: 0;
             width: 100%;

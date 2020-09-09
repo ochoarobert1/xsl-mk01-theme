@@ -123,18 +123,45 @@ function xsl_load_js() {
             //wp_enqueue_script('wow-js');
 
             /*- AOS -*/
-            wp_register_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), '3.0.0', true);
+            wp_register_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', [], '3.0.0', true);
             wp_enqueue_script('aos-js');
 
         }
 
         /*- SWIPER.JS -*/
-        wp_register_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), '3.0.0', true);
+        wp_register_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', [], '3.0.0', true);
         wp_enqueue_script('swiper-js');
 
+        /*- SWEETALERT -*/
+        wp_register_script( 'sweetalert-js', 'https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js', [], '2.1.2', true );
+        wp_enqueue_script('sweetalert-js');
+
+        /*- GOOGLE RECAPTCHA -*/
+        //wp_register_script('recaptcha-js', 'https://www.google.com/recaptcha/api.js', [], '3.0.0', true);
+        //wp_enqueue_script('recaptcha-js');
+
         /*- MAIN FUNCTIONS -*/
-        wp_register_script('main-functions', get_template_directory_uri() . '/js/functions.js', array(), $version_remove, true);
+        wp_register_script('main-functions', get_template_directory_uri() . '/js/functions.min.js', [], $version_remove, true);
         wp_enqueue_script('main-functions');
+
+        wp_register_script('form-functions', get_template_directory_uri() . '/js/form-functions.min.js', [], $version_remove, true);
+        wp_enqueue_script('form-functions');
+
+        /* LOCALIZE MAIN SHORTCODE SCRIPT */
+        wp_localize_script( 'form-functions', 'custom_admin_url', array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'error_nombre' => __('Error: El nombre no puede estar vacio', 'xsl'),
+            'invalid_nombre' => __('Error: El nombre debe ser valido', 'xsl'),
+            'error_apellido' => __('Error: El apellido no puede estar vacio', 'xsl'),
+            'invalid_apellido' => __('Error: El apellido debe ser valido', 'xsl'),
+            'error_email' => __('Error: El correo no puede estar vacio', 'xsl'),
+            'invalid_email' => __('Error: El correo tiene un formato inválido', 'xsl'),
+            'error_phone' => __('Error: El teléfono no puede estar vacio', 'xsl'),
+            'invalid_phone' => __('Error: El teléfono tiene un formato inválido', 'xsl'),
+            'error_message' => __('Error: El mensaje no puede estar vacio', 'xsl'),
+            'success_title' => __('Mensaje Enviado', 'xsl'),
+            'error_title' => __('Error en el envío', 'xsl')
+        ));
 
         if ( is_single('post') && comments_open() && get_option( 'thread_comments' ) ) {
             wp_enqueue_script( 'comment-reply' );

@@ -80,19 +80,19 @@
                         <div class="register-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <h4><?php _e('Provincias', 'xsl'); ?></h4>
                             <select name="provincias" id="provincias" class="form-control">
-                                <option value="">Seleccionar</option>
-                                <option value="">Seleccionar</option>
-                                <option value="">Seleccionar</option>
-                                <option value="">Seleccionar</option>
-                                <option value="">Seleccionar</option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
                             </select>
                         </div>
                         <div class="register-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <h5><?php _e('Alquilas tu propiedad para:', 'xsl'); ?> <span>*</span></h5>
-                            <label for="purpose"><input type="checkbox" name="purpose"> Publicidad, Cine y TV</label>
-                            <label for="purpose"><input type="checkbox" name="purpose"> Sesiones fotográficas</label>
-                            <label for="purpose"><input type="checkbox" name="purpose"> Eventos corporativos y privados</label>
-                            <label for="purpose"><input id="RegistryOthers" type="checkbox" name="purpose" value="otros"> Otros</label>
+                            <label for="purpose"><input type="checkbox" name="purpose"> <?php _e('Publicidad, Cine y TV', 'xsl'); ?></label>
+                            <label for="purpose"><input type="checkbox" name="purpose"> <?php _e('Sesiones fotográficas', 'xsl'); ?></label>
+                            <label for="purpose"><input type="checkbox" name="purpose"> <?php _e('Eventos corporativos y privados', 'xsl'); ?></label>
+                            <label for="purpose"><input id="RegistryOthers" type="checkbox" name="purpose" value="otros"> <?php _e('Otros', 'xsl'); ?></label>
                         </div>
                         <div id="RegistryOthersDetail" class="register-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-none">
                             <h3><?php _e('Otros:', 'xsl'); ?> <span>*</span></h3>
@@ -102,11 +102,11 @@
                         <div class="register-form-control col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <h4><?php _e('Dimensiones', 'xsl'); ?></h4>
                             <select name="dimensiones" id="dimensiones" class="form-control">
-                                <option value="">Seleccionar</option>
-                                <option value="">Seleccionar</option>
-                                <option value="">Seleccionar</option>
-                                <option value="">Seleccionar</option>
-                                <option value="">Seleccionar</option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
+                                <option value=""><?php _e('Seleccionar', 'xsl'); ?></option>
                             </select>
                         </div>
                     </div>

@@ -51,9 +51,9 @@
                         <h2><?php echo $term_current->name; ?></h2>
                     </div>
                     <?php if (!empty($current_parent)) { ?>
-                    <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => $current_parent[0] ); ?>
+                    <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => $current_parent[0], 'orderby' => 'term_order', 'order' => 'DESC' ); ?>
                     <?php } else { ?>
-                    <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => $tax_id ); ?>
+                    <?php $args = array('taxonomy' => 'categorias-localizacion', 'hide_empty' => false,  'parent' => $tax_id, 'orderby' => 'term_order', 'order' => 'DESC' ); ?>
                     <?php } ?>
                     <?php $array_taxonomies = get_terms($args); ?>
                     <?php if (!empty($array_taxonomies)) : ?>

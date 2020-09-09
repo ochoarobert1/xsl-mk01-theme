@@ -50,7 +50,13 @@
                     </div>
 
                     <div class="single-localization-related col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <?php $array_related = new WP_Query(array('post_type' => 'localizaciones', 'posts_per_page' => '3', 'order' => 'DESC', 'orderby' => 'date', 'posts__not_in' => array(get_the_ID()))); ?>
+                        <?php $terms = get_the_terms(get_the_ID(), 'categorias-localizacion'); ?>
+                        <?php foreach ($terms as $item) { ?>
+                        <?php if ($item->parent != 0) { ?>
+                        <?php $current_child = $item->term_id; ?>
+                        <?php } ?>
+                        <?php } ?>
+                        <?php $array_related = new WP_Query(array('post_type' => 'localizaciones', 'posts_per_page' => '3', 'order' => 'DESC', 'orderby' => 'date', 'posts__not_in' => array(get_the_ID()), 'tax_query' => array(array('taxonomy' => 'categorias-localizacion', 'field' => 'term_id', 'terms' => $current_child)))); ?>
                         <?php if ($array_related->have_posts()) : ?>
                         <div class="row">
                             <?php while ($array_related->have_posts()) : $array_related->the_post(); ?>

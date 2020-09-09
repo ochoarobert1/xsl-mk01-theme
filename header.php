@@ -24,12 +24,12 @@
     <meta name="theme-color" content="#1B357F" />
     <?php /* AUTHOR INFORMATION */ ?>
     <meta name="language" content="<?php echo get_bloginfo('language'); ?>" />
-    <meta name="author" content="Extreme Shooting Locations" />
-    <meta name="copyright" content="https://thexsl.com/" />
+    <meta name="author" content="The Exclusive Shooting Locations" />
+    <meta name="copyright" content="https://theexclusiveshootinglocation.com/" />
     <meta name="geo.position" content="10.333333;-67.033333" />
     <meta name="ICBM" content="10.333333, -67.033333" />
     <meta name="geo.region" content="ES" />
-    <meta name="geo.placename" content="Extreme Shooting Locations" />
+    <meta name="geo.placename" content="The Exclusive Shooting Locations" />
     <meta name="DC.title" content="<?php if (is_home()) { echo get_bloginfo('name') . ' | ' . get_bloginfo('description'); } else { echo get_the_title() . ' | ' . get_bloginfo('name'); } ?>" />
     <?php /* MAIN TITLE - CALL HEADER MAIN FUNCTIONS */ ?>
     <?php wp_title('|', false, 'right'); ?>
@@ -51,7 +51,7 @@
 <body class="the-main-body <?php echo join(' ', get_body_class()); ?>" itemscope itemtype="http://schema.org/WebPage">
     <?php $header_options = get_option('xsl_header_settings'); ?>
     <?php $social_options = get_option('xsl_social_settings'); ?>
-    <?php $network_url = network_home_url(); ?>
+    <?php $network_url = network_home_url('/'); ?>
     <header class="container-fluid p-0" role="banner" itemscope itemtype="http://schema.org/WPHeader">
         <div class="row justify-content-center no-gutters">
             <div class="top-header col-xl-11 col-lg-11 col-md-12 col-sm-12 col-12 d-xl-block d-lg-block d-md-block d-sm-none d-none">
@@ -163,7 +163,7 @@
                     <div class="header-mobile-menu">
                         <?php
                             wp_nav_menu( array(
-                                'theme_location'  => 'header_menu',
+                                'theme_location'  => 'mobile_menu',
                                 'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
                                 'container'       => 'div',
                                 'menu_class'      => 'navbar-nav'

@@ -138,6 +138,44 @@ function xsl_custom_taxonomy() {
 }
 add_action( 'init', 'xsl_custom_taxonomy', 0 );
 
+/**
+ * Add ACF thumbnail columns to Linen Category custom taxonomy
+ */
+function add_thumbnail_columns($columns) {
+    $columns['showcase-taxonomy-image-id'] = __('Thumbnail');
+    // Enable the single line of code below if you want the Thumbnail at the end.
+    //return $columns;
+
+    // Code below will make the Thumbnail in the front.
+    // Code start
+    $new = array();
+    foreach($columns as $key => $value) {
+        if ($key=='name') // Put the Thumbnail column before the Name column
+            $new['showcase-taxonomy-image-id'] = 'Thumbnail';
+        $new[$key] = $value;
+    }
+    return $new;
+    // Code end
+}
+add_filter('manage_edit-categorias-localizacion_columns', 'add_thumbnail_columns');
+
+/**
+ * Output ACF thumbnail content in Linen Category custom taxonomy columns
+ */
+function thumbnail_columns_content($content, $column_name, $term_id) {
+    if ('showcase-taxonomy-image-id' == $column_name) {
+        $term = get_term($term_id);
+        $image_id = get_term_meta( $term->term_id, 'showcase-taxonomy-image-id', true );
+        $linen_thumbnail_var = get_term_meta('showcase-taxonomy-image-id', $term);
+        $image = wp_get_attachment_image_src( $image_id, 'thumbnail' );
+        if ($image != '') {
+            $content = '<img src="'.$image[0].'" width="60" />';
+        }
+    }
+    return $content;
+}
+add_filter('manage_categorias-localizacion_custom_column' , 'thumbnail_columns_content' , 10 , 3);
+
 if( ! class_exists( 'Showcase_Taxonomy_Images' ) ) {
     class Showcase_Taxonomy_Images {
 
