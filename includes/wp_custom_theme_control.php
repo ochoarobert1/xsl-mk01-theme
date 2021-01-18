@@ -180,6 +180,38 @@ function xsl_customize_register( $wp_customize ) {
         'settings' => 'xsl_cookie_settings[cookie_text]'
     ));
 
+    $wp_customize->add_setting('xsl_cookie_settings[cookie_text_en]', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+        'capability'        => 'edit_theme_options',
+        'type'           => 'option'
+
+    ));
+
+    $wp_customize->add_control( 'cookie_text_en', array(
+        'type' => 'textarea',
+        'label'    => __('Cookie consent [English]', 'xsl'),
+        'description' => __( 'Texto del Cookie consent.' ),
+        'section'  => 'xsl_cookie_settings',
+        'settings' => 'xsl_cookie_settings[cookie_text_en]'
+    ));
+
+    $wp_customize->add_setting('xsl_cookie_settings[cookie_text_de]', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+        'capability'        => 'edit_theme_options',
+        'type'           => 'option'
+
+    ));
+
+    $wp_customize->add_control( 'cookie_text_de', array(
+        'type' => 'textarea',
+        'label'    => __('Cookie consent [Deustch]', 'xsl'),
+        'description' => __( 'Texto del Cookie consent.' ),
+        'section'  => 'xsl_cookie_settings',
+        'settings' => 'xsl_cookie_settings[cookie_text_de]'
+    ));
+
     $wp_customize->add_setting('xsl_cookie_settings[cookie_link]', array(
         'default'           => '',
         'sanitize_callback' => 'absint',
@@ -193,6 +225,36 @@ function xsl_customize_register( $wp_customize ) {
         'section' => 'xsl_cookie_settings',
         'settings' => 'xsl_cookie_settings[cookie_link]',
         'label' => __( 'Link de Cookies', 'xsl' ),
+    ) );
+
+    $wp_customize->add_setting('xsl_cookie_settings[cookie_link_en]', array(
+        'default'           => '',
+        'sanitize_callback' => 'absint',
+        'capability'        => 'edit_theme_options',
+        'type'           => 'option',
+
+    ));
+
+    $wp_customize->add_control( 'cookie_link_en', array(
+        'type'     => 'dropdown-pages',
+        'section' => 'xsl_cookie_settings',
+        'settings' => 'xsl_cookie_settings[cookie_link_en]',
+        'label' => __( 'Link de Cookies [English]', 'xsl' ),
+    ) );
+
+    $wp_customize->add_setting('xsl_cookie_settings[cookie_link_de]', array(
+        'default'           => '',
+        'sanitize_callback' => 'absint',
+        'capability'        => 'edit_theme_options',
+        'type'           => 'option',
+
+    ));
+
+    $wp_customize->add_control( 'cookie_link_de', array(
+        'type'     => 'dropdown-pages',
+        'section' => 'xsl_cookie_settings',
+        'settings' => 'xsl_cookie_settings[cookie_link_de]',
+        'label' => __( 'Link de Cookies [Deustch]', 'xsl' ),
     ) );
 
 }

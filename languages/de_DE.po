@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Extreme Shooting Locations [Mk.01]\n"
-"POT-Creation-Date: 2020-08-16 19:42-0400\n"
-"PO-Revision-Date: 2020-08-16 19:43-0400\n"
+"POT-Creation-Date: 2021-01-18 11:41-0400\n"
+"PO-Revision-Date: 2021-01-18 11:42-0400\n"
 "Last-Translator: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language-Team: Robert Ochoa <ochoa.robert1@gmail.com>\n"
 "Language: de_DE\n"
@@ -66,6 +66,14 @@ msgstr "Datei"
 msgid "Acerca de"
 msgstr "Über"
 
+#: footer.php:52
+msgid "aquí"
+msgstr "hier Klicken"
+
+#: footer.php:54
+msgid "Acepto"
+msgstr "Akzeptieren"
+
 #: functions.php:113
 msgid "Menu Header - Principal"
 msgstr "Menü-Header - Main"
@@ -104,16 +112,16 @@ msgstr "Vielen Dank für die Erstellung mit "
 msgid "Tema desarrollado por "
 msgstr "Thema entwickelt von "
 
-#: functions.php:303 includes/contact-email.php:131
+#: functions.php:296 includes/contact-email.php:131
 msgid "The Exclusive Shooting Location: Nuevo Mensaje"
 msgstr "The Exclusive Shooting Location: Neue Nachricht"
 
-#: functions.php:306
+#: functions.php:299
 msgid "Su mensaje no pudo ser enviado. Por favor intente nuevamente."
 msgstr ""
 "Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
 
-#: functions.php:308
+#: functions.php:301
 msgid "Gracias por su mensaje. Le contactaremos lo antes posible."
 msgstr ""
 "Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich mit "
@@ -1332,19 +1340,23 @@ msgstr "Liste der Kategorien"
 msgid "Navegación del Listado de Categorias"
 msgstr "Navigation der Liste der Kategorien"
 
-#: includes/wp_custom_post_type.php:175 includes/wp_custom_post_type.php:202
+#: includes/wp_custom_post_type.php:145
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: includes/wp_custom_post_type.php:213 includes/wp_custom_post_type.php:240
 msgid "Image"
 msgstr "Image Comics"
 
-#: includes/wp_custom_post_type.php:179 includes/wp_custom_post_type.php:213
+#: includes/wp_custom_post_type.php:217 includes/wp_custom_post_type.php:251
 msgid "Add Image"
 msgstr "Hinzufügen eines Bildes"
 
-#: includes/wp_custom_post_type.php:180 includes/wp_custom_post_type.php:214
+#: includes/wp_custom_post_type.php:218 includes/wp_custom_post_type.php:252
 msgid "Remove Image"
 msgstr "Entfernen Image"
 
-#: includes/wp_custom_post_type.php:242
+#: includes/wp_custom_post_type.php:280
 msgid "Insert"
 msgstr "Einfügen"
 
@@ -1429,16 +1441,26 @@ msgid "Cookie consent"
 msgstr "Cookie-Zustimmung"
 
 #: includes/wp_custom_theme_control.php:178
+#: includes/wp_custom_theme_control.php:194
+#: includes/wp_custom_theme_control.php:210
 msgid "Texto del Cookie consent."
 msgstr "Cookie-Zustimmungstext."
 
-#: includes/wp_custom_theme_control.php:195
+#: includes/wp_custom_theme_control.php:193
+msgid "Cookie consent [English]"
+msgstr "Cookie-Zustimmung [Englisch]"
+
+#: includes/wp_custom_theme_control.php:209
+msgid "Cookie consent [Deustch]"
+msgstr "Cookie-Zustimmung [Deustch]"
+
+#: includes/wp_custom_theme_control.php:227
 msgid "Link de Cookies"
 msgstr "Link de Cookies"
 
 #: includes/wp_enqueue_scripts.php:153
 msgid "Error: El nombre no puede estar vacio"
-msgstr "Fehler: Der Name darf nicht leer sein."
+msgstr "Fehler: Der Name darf nicht leer sein"
 
 #: includes/wp_enqueue_scripts.php:154
 msgid "Error: El nombre debe ser valido"
